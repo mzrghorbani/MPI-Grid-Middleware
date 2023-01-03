@@ -1,0 +1,8 @@
+<root>
+ <class name="ShareRef" version="1.2" category="sharerefs">
+    <attribute name="name"> 
+        <value>{'conf-de88a0aa-663f-44a9-9d97-436b71175f24': 1, 'conf-6a74af58-b256-4b45-beef-0d701a7a8d90': 0, 'conf-2618a41c-adf6-4d8a-9ecc-dc8d0833e3fb': 0, 'conf-45ad020c-44aa-44da-b95f-888f19a0c3ac': 0, 'conf-b8c96cab-8e70-4f53-b77c-41680d023b24': 0, 'conf-5ff020a7-132d-49e0-8358-4a115fe7472e': 0, 'conf-3269d9f8-783e-4a1e-9cbf-fafbd226600e': 0, 'conf-f81c95cc-e3e5-49fc-8a18-900c42e55067': 0, 'conf-9ad92c63-2080-4ffc-9f0c-2cb2a4668995': 0, 'conf-5be77d40-e86b-4445-a255-85b19086f4e8': 0}</value>
+    </attribute>
+ </class>
+</root>
+

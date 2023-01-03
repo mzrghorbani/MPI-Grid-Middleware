@@ -1,0 +1,13 @@
+.local
+{
+	user = maziar.ghorbani,
+	site = dc2-grid-64.brunel.ac.uk,
+	CPUScalingFactor = 0.0,
+	SharedArea = /cvmfs/cms.cern.ch/lib,
+	LocalArea = davs://dc2-grid-64.brunel.ac.uk/dpm/brunel.ac.uk/home/gridpp/$user,
+	GridCE = {dirac.ce.node1,dirac.ce.node2,dirac.ce.node3,dirac.ce.node4},
+	CEQueue = myQueue,
+	Architecture = {x86_64,ARM64},
+	CPUTimeLeft = 300000,
+	CPUNormalizationFactor = 10.0
+}

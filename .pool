@@ -1,0 +1,78 @@
+.pool
+{
+	WorkloadManagement
+	{
+		Production
+	},
+	Agents
+	{
+		TaskQueueDirector = Active,
+		DIRACVersion = v6r11p1,
+		Status = Active,
+		ListMatchDelay = 10,
+		extraPilotFraction = 1.0,
+		extraPilots = 2,
+		pilotsPerIteration = 100,
+		maxThreadsInPool = 10,
+		PollingTime = 30,
+		MaxCycles = 500000,
+		SubmitPools = Pool_Gridpp,
+		SubmitPools += Pool_Grid,
+		AllowedSubmitPools = Pool_Gridpp,
+		AllowedSubmitPools += Pool_Gridpp
+	},
+	Pool_Gridpp
+	{
+		GridMiddleware = gLite,
+		ResourceBrokers = wms-multi.gridpp.cnaf.infn.ch,
+		Failing = "",
+		PrivatePilotFraction = 1.0,
+		MaxJobsInFillMode = 200,
+		Rank = (other.GlueCEStateWaitingJobs == 0 ? ( other.GlueCEStateFreeCPUs * 10 / other.GluGenericPilotDN = /C=IT/O=INFN/OU=Personal Certificate/L=Bari/CN=Maziar Ghorbani)),
+		GenericPilotGroup = grid_user,
+		GridEnv = /etc/profile.d/grid-env,
+		VirtualOrganization = superbvo.org
+	},
+	Pool_DIRAC
+	{
+		GridMiddleware = mpigridware,
+		ResourceBrokers = wms-multi.gridpp.cnaf.infn.ch,
+		Failing = "",
+		PrivatePilotFraction = 1.0,
+		MaxJobsInFillMode = 5,
+		Rank = (other.GlueCEStateWaitingJobs == 0 ? ( other.GlueCEStateFreeCPUs * 20 / other.GluGenericPilotDN = /C=IT/O=INFN/OU=Personal Certificate/L=Bari/CN=Maziar Ghorbani)),
+		GenericPilotGroup = grid_user,
+		GridEnv = /etc/profile.d/grid-env,
+		VirtualOrganization = pamela
+	}
+	DIRAC
+	{
+		GridMiddleware = DIRAC,
+		pool.createAndQueueTask
+		( 
+			funcDef, args = ( arg1, arg2, ... ),
+			kwargs = { "kwarg1" : value1, "kwarg2" : value2 },
+			taskID = taskID,
+			callback = callbackDef,
+			exceptionCallback = exceptionCallBackDef,
+			usePoolCallbacks = False,
+			timeOut = 0,
+			blocking = True 
+		)
+	},
+	Pool.ProcessTask
+	{ 
+		funcDef,
+		args = ( arg1, arg2, ... ),
+		kwargs = { "kwarg1" : value1, .. },
+		callback = callbackDef,
+		exceptionCallback = exceptionCallbackDef,
+		usePoolCallbacks = False,
+		timeOut = 0,
+		blocking = True
+	}
+    Agent
+    {
+    run (arg1 arg2 arg3)
+    }
+}

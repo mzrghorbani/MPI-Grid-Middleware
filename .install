@@ -1,0 +1,35 @@
+#!/bin/sh
+wget http://repository.egi.eu/sw/production/cas/1/current/repo-files/EGI-trustanchors.repo -O /etc/yum.repos.d/EGI-trustanchors.repo
+yum install ca-policy-egi-core fetch-crl
+chkconfig fetch-crl-cron on
+service fetch-crl-cron start
+useradd -s /bin/bash -d /opt/dirac dirac
+mkdir -p /opt/dirac/etc/grid-security/
+cp /etc/grid-security/host*.pem /opt/dirac/etc/grid-security
+chown -R dirac:dirac /opt/dirac
+su - dirac
+ln -s /etc/grid-security/certificates  ~/.ssh/certificates
+ln -s /etc/grid-security/vomsdir  ~/.ssh/certificates
+git clone https://github.com/DIRACGrid/DIRAC.git
+cd DIRAC
+git checkout v6r14p23
+cd ..
+git clone https://github.com/DIRACGrid/WebAppDIRAC.git
+cd WebAppDIRAC
+git checkout v1r6p26 
+cd ..
+git clone https://github.com/ic-hep/GridPPDIRAC.git
+DIRAC/Core/scripts/dirac-deploy-scripts.py
+yum -y install mysql-server
+chkconfig mysqld on
+service mysqld start
+mysql_secure_installation
+yum install java-1.8.0-openjdk
+yum install xmlsec1-openssl glibmm24 db4-cxx c-ares log4cpp boost-date-time
+scripts/dirac-install -X install.cfg 
+source bashrc
+dirac-proxy-init -x /opt/dirac/.globus
+scripts/dirac-configure -F install.cfg
+dirac-proxy-init -g dirac_admin
+scripts/dirac-setup-site
+./test_MPI.py

@@ -1,0 +1,40 @@
+.direct
+{
+	# Section placed in the */Resources/Sites/<domain>/<site>/CEs* directory
+	CEType = SSHBatch,
+	SubmissionMode = direct,
+	# Parameters of the SSH conection to the site. The /2 indicates how many cores can be used on that# It's equivalent to the number of jobs that can run in parallel.
+	SSHHost = pc.domain.ch/1,pc.domain.ch/2,pc.domain.ch/3,pc.domain.ch/4,
+	SSHUser = dirac_ssh,
+	# if SSH password is not given, the public key connection is assumed.
+	# Do not put this in the CS, put it in the local dirac.cfg of the host.
+	# You don't want external people to see the password.
+	SSHPassword = ********,
+	# If no password, specify the key path
+	SSHKey = ~/.ssh/*.pub,
+	# In case your SSH connection requires specific attributes (see below) available in late v6r10 versSSHOptions = -o option1=something -o option2=somethingelse
+	Queues
+	{
+		# The queue section name should be the same as the name of the actual batch queue
+		short,mid,long
+	},
+	# Max CPU time in HEP'06 unit secs
+	CPUTime = 100000,
+	# Max total number of jobs in the queue
+	MaxTotalJobs = 20,
+	# Max number of waitin jobs in the queue
+	MaxWaitingJobs = 0,
+	# Flag to include pilot proxy in the payload sent to the batch system
+	BundleProxy = True,
+	# Directory on the CE site where the pilot standard output stream will be stored
+	BatchOutput = /home/dirac_ssh/localsite/output,
+	# Directory on the CE site where the pilot standard output stream will be stored
+	BatchError = /home/dirac_ssh/localsite/error,
+	# Directory where the payload executable will be stored temporarily before
+	# submission to the batch system
+	ExecutableArea = /home/mghorbani/workspace/grid/config/test,
+	# Extra options to be passed to the qsub job submission command
+	SubmitOptions = True,
+	# Flag to remove the pilot output after it was retrieved
+	RemoveOutput = True
+}

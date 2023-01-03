@@ -1,0 +1,60 @@
+'Schedular': 
+{
+	'Configuration': 
+	[
+		'CE2CSAgent'
+	],
+	'Framework': 
+	[
+		'TopErrorMessagesReporter',
+		'SystemLoggingDBCleaner',
+		'CAUpdateAgent'
+	],
+	'WorkloadManagement': 
+	[
+		'JobHistoryAgent',
+		'InputDataAgent',
+		'StalledJobAgent',
+		'TaskQueueDirector',
+		'MightyOptimizer',
+		'PilotStatusAgent',
+		'JobCleaningAgent',
+		'StatesAccountingAgent'
+	]
+}
+
+'Services': 
+{
+	'Accounting': 
+	[
+		'ReportGenerator', 'DataStore'
+	],
+	'Configuration': 
+	[
+		'Server'
+	],
+	'Framework': 
+	[
+		'Monitoring',
+		'BundleDelivery',
+		'SecurityLogging',
+		'Notification',
+		'UserProfileManager',
+		'SystemAdministrator',
+		'ProxyManager',
+		'SystemLogging'
+	],
+	'RequestManagement': 
+	[
+		'RequestManager'
+	],
+	'WorkloadManagement': 
+	[
+		'JobMonitoring',
+		'WMSAdministrator',
+		'SandboxStore',
+		'Matcher',
+		'JobStateUpdate',
+		'JobManager'
+	]
+}

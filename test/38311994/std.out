@@ -1,0 +1,12 @@
+WARNING: Parsing of '.cfg' files as command line arguments is changing!
+          Set the environment variable 'export DIRAC_NO_CFG=1' to pass the file as a positional
+          argument (this will become the default).
+          To modify the local configuration use '--cfg <configfile>' instead.
+2022-09-19 23:26:52 UTC dirac-jobexec INFO: JobID: 38311994
+2022-09-19 23:26:52 UTC dirac-jobexec INFO: DIRAC JobID 38311994 is running at site LCG.UKI-LT2-QMUL.uk
+Executing StepInstance RunScriptStep1 of type ScriptStep1 ['ScriptStep1']
+2022-09-19 23:26:52 UTC dirac-jobexec/Script INFO: Command is: cp input.txt output.txt
+2022-09-19 23:26:52 UTC dirac-jobexec/Script INFO: cp input.txt output.txt execution completed with status 0
+2022-09-19 23:26:52 UTC dirac-jobexec/Script INFO: Output written to log.log, execution complete.
+2022-09-19 23:26:53 UTC dirac-jobexec/Script INFO: cp successful
+2022-09-19 23:26:53 UTC dirac-jobexec/Script INFO: ===== Terminating <class 'DIRAC.Workflow.Modules.Script.Script'> ===== 

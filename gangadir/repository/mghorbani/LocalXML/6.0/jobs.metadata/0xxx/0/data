@@ -1,0 +1,11 @@
+<root>
+ <class name="JobTree" version="1.2" category="jobtrees">
+    <attribute name="name"> 
+        <value>''</value>
+    </attribute>
+    <attribute name="folders"> 
+        <value>{'/': {}}</value>
+    </attribute>
+ </class>
+</root>
+

@@ -1,0 +1,9 @@
+#!/bin/sh
+GRID_USER=mghorbani
+mkdir -p ~/.globus/
+cp $DEVROOT/$GRID_USER/*.{pem,key} ~/.globus/
+#mv ~/.globus/client.key ~/.globus/userkey.pem
+#mv ~/.globus/client.pem ~/.globus/usercert.pem
+openssl x509 -noout -subject -in ~/.globus/usercert.pem | sed 's:^subject= ::g'
+dirac-proxy-init -g ${GRID_USER} -M -U
+

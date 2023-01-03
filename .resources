@@ -1,0 +1,46 @@
+.resources
+{
+	Sites
+	{
+		# Site administrative domain
+		LCG
+		{
+			# Site section
+			LCG.CNAF.ch
+			{
+				# Site name
+				Name = brunel-ce,
+				CE = [mpich,mpi1,mpi2,openmpi],
+				# Section describing each CE
+				CEs
+				{
+					CEType = DC2-BRUNEL,
+					SubmissionMode = direct,
+					Pool = mpigridware,
+					Queues
+					{
+						short
+					},
+					Queues
+					{
+						mid
+					},
+					Queues
+					{
+						long
+					},
+					Resources
+					{
+						CPUTime = 10000,
+						MaxTotalJobs = 2000,
+						MaxWaitingJobs = 0
+					}
+					Agent
+					{
+					run (arg1 arg2 arg3)
+					}
+				}
+			}
+		}
+	}
+}

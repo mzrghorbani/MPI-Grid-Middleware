@@ -1,0 +1,505 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset=utf-8>
+<title>Current Ganga Threads</title>
+</head><body><h1>Current Ganga Threads</h1>
+<h2>IPythonHistorySavingThread</h2>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span>  File <span style="color: #008000">&quot;/cvmfs/sft.cern.ch/lcg/releases/LCG_100/Python/3.8.6/x86_64-centos7-gcc9-opt/lib/python3.8/threading.py&quot;</span>, line <span style="color: #666666">890</span>, in _bootstrap
+    <span style="color: #008000">self</span><span style="color: #666666">.</span>_bootstrap_inner()
+  File <span style="color: #008000">&quot;/cvmfs/sft.cern.ch/lcg/releases/LCG_100/Python/3.8.6/x86_64-centos7-gcc9-opt/lib/python3.8/threading.py&quot;</span>, line <span style="color: #666666">932</span>, in _bootstrap_inner
+    <span style="color: #008000">self</span><span style="color: #666666">.</span>run()
+  File <span style="color: #008000">&quot;/cvmfs/ganga.cern.ch/Ganga/install/8.6.1/lib/python3.8/site-packages/decorator.py&quot;</span>, line <span style="color: #666666">232</span>, in fun
+    <span style="color: #008000; font-weight: bold">return</span> caller(func, <span style="color: #666666">*</span>(extras <span style="color: #666666">+</span> args), <span style="color: #666666">**</span>kw)
+  File <span style="color: #008000">&quot;/cvmfs/ganga.cern.ch/Ganga/install/8.6.1/lib/python3.8/site-packages/IPython/core/history.py&quot;</span>, line <span style="color: #666666">60</span>, in only_when_enabled
+    <span style="color: #008000; font-weight: bold">return</span> f(<span style="color: #008000">self</span>, <span style="color: #666666">*</span>a, <span style="color: #666666">**</span>kw)
+  File <span style="color: #008000">&quot;/cvmfs/ganga.cern.ch/Ganga/install/8.6.1/lib/python3.8/site-packages/IPython/core/history.py&quot;</span>, line <span style="color: #666666">854</span>, in run
+    <span style="color: #008000">self</span><span style="color: #666666">.</span>history_manager<span style="color: #666666">.</span>save_flag<span style="color: #666666">.</span>wait()
+  File <span style="color: #008000">&quot;/cvmfs/sft.cern.ch/lcg/releases/LCG_100/Python/3.8.6/x86_64-centos7-gcc9-opt/lib/python3.8/threading.py&quot;</span>, line <span style="color: #666666">558</span>, in wait
+    signaled <span style="color: #666666">=</span> <span style="color: #008000">self</span><span style="color: #666666">.</span>_cond<span style="color: #666666">.</span>wait(timeout)
+  File <span style="color: #008000">&quot;/cvmfs/sft.cern.ch/lcg/releases/LCG_100/Python/3.8.6/x86_64-centos7-gcc9-opt/lib/python3.8/threading.py&quot;</span>, line <span style="color: #666666">302</span>, in wait
+    waiter<span style="color: #666666">.</span>acquire()
+</pre></div>
+
+<h2>GANGA_Update_Thread_JobRegistry_Monitor</h2>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span>  File <span style="color: #008000">&quot;/cvmfs/sft.cern.ch/lcg/releases/LCG_100/Python/3.8.6/x86_64-centos7-gcc9-opt/lib/python3.8/threading.py&quot;</span>, line <span style="color: #666666">890</span>, in _bootstrap
+    <span style="color: #008000">self</span><span style="color: #666666">.</span>_bootstrap_inner()
+  File <span style="color: #008000">&quot;/cvmfs/sft.cern.ch/lcg/releases/LCG_100/Python/3.8.6/x86_64-centos7-gcc9-opt/lib/python3.8/threading.py&quot;</span>, line <span style="color: #666666">932</span>, in _bootstrap_inner
+    <span style="color: #008000">self</span><span style="color: #666666">.</span>run()
+  File <span style="color: #008000">&quot;/cvmfs/ganga.cern.ch/Ganga/install/8.6.1/lib/python3.8/site-packages/ganga/GangaCore/Core/MonitoringComponent/Local_GangaMC_Service.py&quot;</span>, line <span style="color: #666666">630</span>, in run
+    <span style="color: #008000">self</span><span style="color: #666666">.</span>__mainLoopCond<span style="color: #666666">.</span>wait(<span style="color: #008000">self</span><span style="color: #666666">.</span>uPollRate <span style="color: #666666">*</span> <span style="color: #666666">0.05</span>)
+  File <span style="color: #008000">&quot;/cvmfs/sft.cern.ch/lcg/releases/LCG_100/Python/3.8.6/x86_64-centos7-gcc9-opt/lib/python3.8/threading.py&quot;</span>, line <span style="color: #666666">306</span>, in wait
+    gotit <span style="color: #666666">=</span> waiter<span style="color: #666666">.</span>acquire(<span style="color: #008000; font-weight: bold">True</span>, timeout)
+</pre></div>
+
+<h2>GANGA_Update_Thread_TaskRegistryFlusher</h2>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span>  File <span style="color: #008000">&quot;/cvmfs/sft.cern.ch/lcg/releases/LCG_100/Python/3.8.6/x86_64-centos7-gcc9-opt/lib/python3.8/threading.py&quot;</span>, line <span style="color: #666666">890</span>, in _bootstrap
+    <span style="color: #008000">self</span><span style="color: #666666">.</span>_bootstrap_inner()
+  File <span style="color: #008000">&quot;/cvmfs/sft.cern.ch/lcg/releases/LCG_100/Python/3.8.6/x86_64-centos7-gcc9-opt/lib/python3.8/threading.py&quot;</span>, line <span style="color: #666666">932</span>, in _bootstrap_inner
+    <span style="color: #008000">self</span><span style="color: #666666">.</span>run()
+  File <span style="color: #008000">&quot;/cvmfs/ganga.cern.ch/Ganga/install/8.6.1/lib/python3.8/site-packages/ganga/GangaCore/Core/GangaRepository/Registry.py&quot;</span>, line <span style="color: #666666">267</span>, in run
+    time<span style="color: #666666">.</span>sleep(<span style="color: #666666">1</span> <span style="color: #666666">/</span> sleeps_per_second)
+</pre></div>
+
+<h2>GANGA_Update_Thread_GangaTasks</h2>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span>  File <span style="color: #008000">&quot;/cvmfs/sft.cern.ch/lcg/releases/LCG_100/Python/3.8.6/x86_64-centos7-gcc9-opt/lib/python3.8/threading.py&quot;</span>, line <span style="color: #666666">890</span>, in _bootstrap
+    <span style="color: #008000">self</span><span style="color: #666666">.</span>_bootstrap_inner()
+  File <span style="color: #008000">&quot;/cvmfs/sft.cern.ch/lcg/releases/LCG_100/Python/3.8.6/x86_64-centos7-gcc9-opt/lib/python3.8/threading.py&quot;</span>, line <span style="color: #666666">932</span>, in _bootstrap_inner
+    <span style="color: #008000">self</span><span style="color: #666666">.</span>run()
+  File <span style="color: #008000">&quot;/cvmfs/sft.cern.ch/lcg/releases/LCG_100/Python/3.8.6/x86_64-centos7-gcc9-opt/lib/python3.8/threading.py&quot;</span>, line <span style="color: #666666">870</span>, in run
+    <span style="color: #008000">self</span><span style="color: #666666">.</span>_target(<span style="color: #666666">*</span><span style="color: #008000">self</span><span style="color: #666666">.</span>_args, <span style="color: #666666">**</span><span style="color: #008000">self</span><span style="color: #666666">.</span>_kwargs)
+  File <span style="color: #008000">&quot;/cvmfs/ganga.cern.ch/Ganga/install/8.6.1/lib/python3.8/site-packages/ganga/GangaCore/GPIDev/Lib/Tasks/TaskRegistry.py&quot;</span>, line <span style="color: #666666">120</span>, in _thread_main
+    time<span style="color: #666666">.</span>sleep(<span style="color: #666666">0.01</span>)
+</pre></div>
+
+<h2>GANGA_Update_Thread_JobRegistryFlusher</h2>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span>  File <span style="color: #008000">&quot;/cvmfs/sft.cern.ch/lcg/releases/LCG_100/Python/3.8.6/x86_64-centos7-gcc9-opt/lib/python3.8/threading.py&quot;</span>, line <span style="color: #666666">890</span>, in _bootstrap
+    <span style="color: #008000">self</span><span style="color: #666666">.</span>_bootstrap_inner()
+  File <span style="color: #008000">&quot;/cvmfs/sft.cern.ch/lcg/releases/LCG_100/Python/3.8.6/x86_64-centos7-gcc9-opt/lib/python3.8/threading.py&quot;</span>, line <span style="color: #666666">932</span>, in _bootstrap_inner
+    <span style="color: #008000">self</span><span style="color: #666666">.</span>run()
+  File <span style="color: #008000">&quot;/cvmfs/ganga.cern.ch/Ganga/install/8.6.1/lib/python3.8/site-packages/ganga/GangaCore/Core/GangaRepository/Registry.py&quot;</span>, line <span style="color: #666666">267</span>, in run
+    time<span style="color: #666666">.</span>sleep(<span style="color: #666666">1</span> <span style="color: #666666">/</span> sleeps_per_second)
+</pre></div>
+
+<h2>GANGA_Update_Thread_JobRegistryFlusher</h2>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span>  File <span style="color: #008000">&quot;/cvmfs/sft.cern.ch/lcg/releases/LCG_100/Python/3.8.6/x86_64-centos7-gcc9-opt/lib/python3.8/threading.py&quot;</span>, line <span style="color: #666666">890</span>, in _bootstrap
+    <span style="color: #008000">self</span><span style="color: #666666">.</span>_bootstrap_inner()
+  File <span style="color: #008000">&quot;/cvmfs/sft.cern.ch/lcg/releases/LCG_100/Python/3.8.6/x86_64-centos7-gcc9-opt/lib/python3.8/threading.py&quot;</span>, line <span style="color: #666666">932</span>, in _bootstrap_inner
+    <span style="color: #008000">self</span><span style="color: #666666">.</span>run()
+  File <span style="color: #008000">&quot;/cvmfs/ganga.cern.ch/Ganga/install/8.6.1/lib/python3.8/site-packages/ganga/GangaCore/Core/GangaRepository/Registry.py&quot;</span>, line <span style="color: #666666">267</span>, in run
+    time<span style="color: #666666">.</span>sleep(<span style="color: #666666">1</span> <span style="color: #666666">/</span> sleeps_per_second)
+</pre></div>
+
+<h2>GANGA_Update_Thread_SessionLockRefresher</h2>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span>  File <span style="color: #008000">&quot;/cvmfs/sft.cern.ch/lcg/releases/LCG_100/Python/3.8.6/x86_64-centos7-gcc9-opt/lib/python3.8/threading.py&quot;</span>, line <span style="color: #666666">890</span>, in _bootstrap
+    <span style="color: #008000">self</span><span style="color: #666666">.</span>_bootstrap_inner()
+  File <span style="color: #008000">&quot;/cvmfs/sft.cern.ch/lcg/releases/LCG_100/Python/3.8.6/x86_64-centos7-gcc9-opt/lib/python3.8/threading.py&quot;</span>, line <span style="color: #666666">932</span>, in _bootstrap_inner
+    <span style="color: #008000">self</span><span style="color: #666666">.</span>run()
+  File <span style="color: #008000">&quot;/cvmfs/ganga.cern.ch/Ganga/install/8.6.1/lib/python3.8/site-packages/ganga/GangaCore/Core/GangaRepository/SessionLock.py&quot;</span>, line <span style="color: #666666">128</span>, in run
+    time<span style="color: #666666">.</span>sleep(<span style="color: #666666">0.05</span> <span style="color: #666666">+</span> random<span style="color: #666666">.</span>random() <span style="color: #666666">*</span> <span style="color: #666666">0.05</span>)
+</pre></div>
+
+<h2>Thread-1</h2>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span>  File <span style="color: #008000">&quot;/cvmfs/sft.cern.ch/lcg/releases/LCG_100/Python/3.8.6/x86_64-centos7-gcc9-opt/lib/python3.8/threading.py&quot;</span>, line <span style="color: #666666">890</span>, in _bootstrap
+    <span style="color: #008000">self</span><span style="color: #666666">.</span>_bootstrap_inner()
+  File <span style="color: #008000">&quot;/cvmfs/sft.cern.ch/lcg/releases/LCG_100/Python/3.8.6/x86_64-centos7-gcc9-opt/lib/python3.8/threading.py&quot;</span>, line <span style="color: #666666">932</span>, in _bootstrap_inner
+    <span style="color: #008000">self</span><span style="color: #666666">.</span>run()
+  File <span style="color: #008000">&quot;/cvmfs/ganga.cern.ch/Ganga/install/8.6.1/lib/python3.8/site-packages/ganga/GangaCore/Utility/stacktracer.py&quot;</span>, line <span style="color: #666666">96</span>, in run
+    <span style="color: #008000">self</span><span style="color: #666666">.</span>stacktraces()
+  File <span style="color: #008000">&quot;/cvmfs/ganga.cern.ch/Ganga/install/8.6.1/lib/python3.8/site-packages/ganga/GangaCore/Utility/stacktracer.py&quot;</span>, line <span style="color: #666666">109</span>, in stacktraces
+    fout<span style="color: #666666">.</span>write(stacktraces())
+  File <span style="color: #008000">&quot;/cvmfs/ganga.cern.ch/Ganga/install/8.6.1/lib/python3.8/site-packages/ganga/GangaCore/Utility/stacktracer.py&quot;</span>, line <span style="color: #666666">56</span>, in stacktraces
+    trace <span style="color: #666666">=</span> traceback<span style="color: #666666">.</span>format_stack(stack)
+</pre></div>
+
+<h2>Ganga_Worker_4</h2>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span>  File <span style="color: #008000">&quot;/cvmfs/sft.cern.ch/lcg/releases/LCG_100/Python/3.8.6/x86_64-centos7-gcc9-opt/lib/python3.8/threading.py&quot;</span>, line <span style="color: #666666">890</span>, in _bootstrap
+    <span style="color: #008000">self</span><span style="color: #666666">.</span>_bootstrap_inner()
+  File <span style="color: #008000">&quot;/cvmfs/sft.cern.ch/lcg/releases/LCG_100/Python/3.8.6/x86_64-centos7-gcc9-opt/lib/python3.8/threading.py&quot;</span>, line <span style="color: #666666">932</span>, in _bootstrap_inner
+    <span style="color: #008000">self</span><span style="color: #666666">.</span>run()
+  File <span style="color: #008000">&quot;/cvmfs/sft.cern.ch/lcg/releases/LCG_100/Python/3.8.6/x86_64-centos7-gcc9-opt/lib/python3.8/threading.py&quot;</span>, line <span style="color: #666666">870</span>, in run
+    <span style="color: #008000">self</span><span style="color: #666666">.</span>_target(<span style="color: #666666">*</span><span style="color: #008000">self</span><span style="color: #666666">.</span>_args, <span style="color: #666666">**</span><span style="color: #008000">self</span><span style="color: #666666">.</span>_kwargs)
+  File <span style="color: #008000">&quot;/cvmfs/ganga.cern.ch/Ganga/install/8.6.1/lib/python3.8/site-packages/ganga/GangaCore/Core/GangaThread/WorkerThreads/WorkerThreadPool.py&quot;</span>, line <span style="color: #666666">91</span>, in __worker_thread
+    item <span style="color: #666666">=</span> <span style="color: #008000">self</span><span style="color: #666666">.</span>__queue<span style="color: #666666">.</span>get(<span style="color: #008000; font-weight: bold">True</span>, timeout)
+  File <span style="color: #008000">&quot;/cvmfs/sft.cern.ch/lcg/releases/LCG_100/Python/3.8.6/x86_64-centos7-gcc9-opt/lib/python3.8/queue.py&quot;</span>, line <span style="color: #666666">179</span>, in get
+    <span style="color: #008000">self</span><span style="color: #666666">.</span>not_empty<span style="color: #666666">.</span>wait(remaining)
+  File <span style="color: #008000">&quot;/cvmfs/sft.cern.ch/lcg/releases/LCG_100/Python/3.8.6/x86_64-centos7-gcc9-opt/lib/python3.8/threading.py&quot;</span>, line <span style="color: #666666">306</span>, in wait
+    gotit <span style="color: #666666">=</span> waiter<span style="color: #666666">.</span>acquire(<span style="color: #008000; font-weight: bold">True</span>, timeout)
+</pre></div>
+
+<h2>Ganga_Worker_3</h2>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span>  File <span style="color: #008000">&quot;/cvmfs/sft.cern.ch/lcg/releases/LCG_100/Python/3.8.6/x86_64-centos7-gcc9-opt/lib/python3.8/threading.py&quot;</span>, line <span style="color: #666666">890</span>, in _bootstrap
+    <span style="color: #008000">self</span><span style="color: #666666">.</span>_bootstrap_inner()
+  File <span style="color: #008000">&quot;/cvmfs/sft.cern.ch/lcg/releases/LCG_100/Python/3.8.6/x86_64-centos7-gcc9-opt/lib/python3.8/threading.py&quot;</span>, line <span style="color: #666666">932</span>, in _bootstrap_inner
+    <span style="color: #008000">self</span><span style="color: #666666">.</span>run()
+  File <span style="color: #008000">&quot;/cvmfs/sft.cern.ch/lcg/releases/LCG_100/Python/3.8.6/x86_64-centos7-gcc9-opt/lib/python3.8/threading.py&quot;</span>, line <span style="color: #666666">870</span>, in run
+    <span style="color: #008000">self</span><span style="color: #666666">.</span>_target(<span style="color: #666666">*</span><span style="color: #008000">self</span><span style="color: #666666">.</span>_args, <span style="color: #666666">**</span><span style="color: #008000">self</span><span style="color: #666666">.</span>_kwargs)
+  File <span style="color: #008000">&quot;/cvmfs/ganga.cern.ch/Ganga/install/8.6.1/lib/python3.8/site-packages/ganga/GangaCore/Core/GangaThread/WorkerThreads/WorkerThreadPool.py&quot;</span>, line <span style="color: #666666">91</span>, in __worker_thread
+    item <span style="color: #666666">=</span> <span style="color: #008000">self</span><span style="color: #666666">.</span>__queue<span style="color: #666666">.</span>get(<span style="color: #008000; font-weight: bold">True</span>, timeout)
+  File <span style="color: #008000">&quot;/cvmfs/sft.cern.ch/lcg/releases/LCG_100/Python/3.8.6/x86_64-centos7-gcc9-opt/lib/python3.8/queue.py&quot;</span>, line <span style="color: #666666">182</span>, in get
+    <span style="color: #008000; font-weight: bold">return</span> item
+  File <span style="color: #008000">&quot;/cvmfs/sft.cern.ch/lcg/releases/LCG_100/Python/3.8.6/x86_64-centos7-gcc9-opt/lib/python3.8/threading.py&quot;</span>, line <span style="color: #666666">309</span>, in wait
+    <span style="color: #008000; font-weight: bold">return</span> gotit
+</pre></div>
+
+<h2>Ganga_Worker_2</h2>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span>  File <span style="color: #008000">&quot;/cvmfs/sft.cern.ch/lcg/releases/LCG_100/Python/3.8.6/x86_64-centos7-gcc9-opt/lib/python3.8/threading.py&quot;</span>, line <span style="color: #666666">890</span>, in _bootstrap
+    <span style="color: #008000">self</span><span style="color: #666666">.</span>_bootstrap_inner()
+  File <span style="color: #008000">&quot;/cvmfs/sft.cern.ch/lcg/releases/LCG_100/Python/3.8.6/x86_64-centos7-gcc9-opt/lib/python3.8/threading.py&quot;</span>, line <span style="color: #666666">932</span>, in _bootstrap_inner
+    <span style="color: #008000">self</span><span style="color: #666666">.</span>run()
+  File <span style="color: #008000">&quot;/cvmfs/sft.cern.ch/lcg/releases/LCG_100/Python/3.8.6/x86_64-centos7-gcc9-opt/lib/python3.8/threading.py&quot;</span>, line <span style="color: #666666">870</span>, in run
+    <span style="color: #008000">self</span><span style="color: #666666">.</span>_target(<span style="color: #666666">*</span><span style="color: #008000">self</span><span style="color: #666666">.</span>_args, <span style="color: #666666">**</span><span style="color: #008000">self</span><span style="color: #666666">.</span>_kwargs)
+  File <span style="color: #008000">&quot;/cvmfs/ganga.cern.ch/Ganga/install/8.6.1/lib/python3.8/site-packages/ganga/GangaCore/Core/GangaThread/WorkerThreads/WorkerThreadPool.py&quot;</span>, line <span style="color: #666666">91</span>, in __worker_thread
+    item <span style="color: #666666">=</span> <span style="color: #008000">self</span><span style="color: #666666">.</span>__queue<span style="color: #666666">.</span>get(<span style="color: #008000; font-weight: bold">True</span>, timeout)
+  File <span style="color: #008000">&quot;/cvmfs/sft.cern.ch/lcg/releases/LCG_100/Python/3.8.6/x86_64-centos7-gcc9-opt/lib/python3.8/queue.py&quot;</span>, line <span style="color: #666666">182</span>, in get
+    <span style="color: #008000; font-weight: bold">return</span> item
+  File <span style="color: #008000">&quot;/cvmfs/sft.cern.ch/lcg/releases/LCG_100/Python/3.8.6/x86_64-centos7-gcc9-opt/lib/python3.8/threading.py&quot;</span>, line <span style="color: #666666">309</span>, in wait
+    <span style="color: #008000; font-weight: bold">return</span> gotit
+</pre></div>
+
+<h2>Ganga_Worker_1</h2>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span>  File <span style="color: #008000">&quot;/cvmfs/sft.cern.ch/lcg/releases/LCG_100/Python/3.8.6/x86_64-centos7-gcc9-opt/lib/python3.8/threading.py&quot;</span>, line <span style="color: #666666">890</span>, in _bootstrap
+    <span style="color: #008000">self</span><span style="color: #666666">.</span>_bootstrap_inner()
+  File <span style="color: #008000">&quot;/cvmfs/sft.cern.ch/lcg/releases/LCG_100/Python/3.8.6/x86_64-centos7-gcc9-opt/lib/python3.8/threading.py&quot;</span>, line <span style="color: #666666">932</span>, in _bootstrap_inner
+    <span style="color: #008000">self</span><span style="color: #666666">.</span>run()
+  File <span style="color: #008000">&quot;/cvmfs/sft.cern.ch/lcg/releases/LCG_100/Python/3.8.6/x86_64-centos7-gcc9-opt/lib/python3.8/threading.py&quot;</span>, line <span style="color: #666666">870</span>, in run
+    <span style="color: #008000">self</span><span style="color: #666666">.</span>_target(<span style="color: #666666">*</span><span style="color: #008000">self</span><span style="color: #666666">.</span>_args, <span style="color: #666666">**</span><span style="color: #008000">self</span><span style="color: #666666">.</span>_kwargs)
+  File <span style="color: #008000">&quot;/cvmfs/ganga.cern.ch/Ganga/install/8.6.1/lib/python3.8/site-packages/ganga/GangaCore/Core/GangaThread/WorkerThreads/WorkerThreadPool.py&quot;</span>, line <span style="color: #666666">91</span>, in __worker_thread
+    item <span style="color: #666666">=</span> <span style="color: #008000">self</span><span style="color: #666666">.</span>__queue<span style="color: #666666">.</span>get(<span style="color: #008000; font-weight: bold">True</span>, timeout)
+  File <span style="color: #008000">&quot;/cvmfs/sft.cern.ch/lcg/releases/LCG_100/Python/3.8.6/x86_64-centos7-gcc9-opt/lib/python3.8/queue.py&quot;</span>, line <span style="color: #666666">182</span>, in get
+    <span style="color: #008000; font-weight: bold">return</span> item
+  File <span style="color: #008000">&quot;/cvmfs/sft.cern.ch/lcg/releases/LCG_100/Python/3.8.6/x86_64-centos7-gcc9-opt/lib/python3.8/threading.py&quot;</span>, line <span style="color: #666666">309</span>, in wait
+    <span style="color: #008000; font-weight: bold">return</span> gotit
+</pre></div>
+
+<h2>Ganga_Worker_0</h2>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span>  File <span style="color: #008000">&quot;/cvmfs/sft.cern.ch/lcg/releases/LCG_100/Python/3.8.6/x86_64-centos7-gcc9-opt/lib/python3.8/threading.py&quot;</span>, line <span style="color: #666666">890</span>, in _bootstrap
+    <span style="color: #008000">self</span><span style="color: #666666">.</span>_bootstrap_inner()
+  File <span style="color: #008000">&quot;/cvmfs/sft.cern.ch/lcg/releases/LCG_100/Python/3.8.6/x86_64-centos7-gcc9-opt/lib/python3.8/threading.py&quot;</span>, line <span style="color: #666666">932</span>, in _bootstrap_inner
+    <span style="color: #008000">self</span><span style="color: #666666">.</span>run()
+  File <span style="color: #008000">&quot;/cvmfs/sft.cern.ch/lcg/releases/LCG_100/Python/3.8.6/x86_64-centos7-gcc9-opt/lib/python3.8/threading.py&quot;</span>, line <span style="color: #666666">870</span>, in run
+    <span style="color: #008000">self</span><span style="color: #666666">.</span>_target(<span style="color: #666666">*</span><span style="color: #008000">self</span><span style="color: #666666">.</span>_args, <span style="color: #666666">**</span><span style="color: #008000">self</span><span style="color: #666666">.</span>_kwargs)
+  File <span style="color: #008000">&quot;/cvmfs/ganga.cern.ch/Ganga/install/8.6.1/lib/python3.8/site-packages/ganga/GangaCore/Core/GangaThread/WorkerThreads/WorkerThreadPool.py&quot;</span>, line <span style="color: #666666">91</span>, in __worker_thread
+    item <span style="color: #666666">=</span> <span style="color: #008000">self</span><span style="color: #666666">.</span>__queue<span style="color: #666666">.</span>get(<span style="color: #008000; font-weight: bold">True</span>, timeout)
+  File <span style="color: #008000">&quot;/cvmfs/sft.cern.ch/lcg/releases/LCG_100/Python/3.8.6/x86_64-centos7-gcc9-opt/lib/python3.8/queue.py&quot;</span>, line <span style="color: #666666">182</span>, in get
+    <span style="color: #008000; font-weight: bold">return</span> item
+  File <span style="color: #008000">&quot;/cvmfs/sft.cern.ch/lcg/releases/LCG_100/Python/3.8.6/x86_64-centos7-gcc9-opt/lib/python3.8/threading.py&quot;</span>, line <span style="color: #666666">309</span>, in wait
+    <span style="color: #008000; font-weight: bold">return</span> gotit
+</pre></div>
+
+<h2>User_Worker_4</h2>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span>  File <span style="color: #008000">&quot;/cvmfs/sft.cern.ch/lcg/releases/LCG_100/Python/3.8.6/x86_64-centos7-gcc9-opt/lib/python3.8/threading.py&quot;</span>, line <span style="color: #666666">890</span>, in _bootstrap
+    <span style="color: #008000">self</span><span style="color: #666666">.</span>_bootstrap_inner()
+  File <span style="color: #008000">&quot;/cvmfs/sft.cern.ch/lcg/releases/LCG_100/Python/3.8.6/x86_64-centos7-gcc9-opt/lib/python3.8/threading.py&quot;</span>, line <span style="color: #666666">932</span>, in _bootstrap_inner
+    <span style="color: #008000">self</span><span style="color: #666666">.</span>run()
+  File <span style="color: #008000">&quot;/cvmfs/sft.cern.ch/lcg/releases/LCG_100/Python/3.8.6/x86_64-centos7-gcc9-opt/lib/python3.8/threading.py&quot;</span>, line <span style="color: #666666">870</span>, in run
+    <span style="color: #008000">self</span><span style="color: #666666">.</span>_target(<span style="color: #666666">*</span><span style="color: #008000">self</span><span style="color: #666666">.</span>_args, <span style="color: #666666">**</span><span style="color: #008000">self</span><span style="color: #666666">.</span>_kwargs)
+  File <span style="color: #008000">&quot;/cvmfs/ganga.cern.ch/Ganga/install/8.6.1/lib/python3.8/site-packages/ganga/GangaCore/Core/GangaThread/WorkerThreads/WorkerThreadPool.py&quot;</span>, line <span style="color: #666666">91</span>, in __worker_thread
+    item <span style="color: #666666">=</span> <span style="color: #008000">self</span><span style="color: #666666">.</span>__queue<span style="color: #666666">.</span>get(<span style="color: #008000; font-weight: bold">True</span>, timeout)
+  File <span style="color: #008000">&quot;/cvmfs/sft.cern.ch/lcg/releases/LCG_100/Python/3.8.6/x86_64-centos7-gcc9-opt/lib/python3.8/queue.py&quot;</span>, line <span style="color: #666666">182</span>, in get
+    <span style="color: #008000; font-weight: bold">return</span> item
+  File <span style="color: #008000">&quot;/cvmfs/sft.cern.ch/lcg/releases/LCG_100/Python/3.8.6/x86_64-centos7-gcc9-opt/lib/python3.8/threading.py&quot;</span>, line <span style="color: #666666">309</span>, in wait
+    <span style="color: #008000; font-weight: bold">return</span> gotit
+</pre></div>
+
+<h2>User_Worker_3</h2>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span>  File <span style="color: #008000">&quot;/cvmfs/sft.cern.ch/lcg/releases/LCG_100/Python/3.8.6/x86_64-centos7-gcc9-opt/lib/python3.8/threading.py&quot;</span>, line <span style="color: #666666">890</span>, in _bootstrap
+    <span style="color: #008000">self</span><span style="color: #666666">.</span>_bootstrap_inner()
+  File <span style="color: #008000">&quot;/cvmfs/sft.cern.ch/lcg/releases/LCG_100/Python/3.8.6/x86_64-centos7-gcc9-opt/lib/python3.8/threading.py&quot;</span>, line <span style="color: #666666">932</span>, in _bootstrap_inner
+    <span style="color: #008000">self</span><span style="color: #666666">.</span>run()
+  File <span style="color: #008000">&quot;/cvmfs/sft.cern.ch/lcg/releases/LCG_100/Python/3.8.6/x86_64-centos7-gcc9-opt/lib/python3.8/threading.py&quot;</span>, line <span style="color: #666666">870</span>, in run
+    <span style="color: #008000">self</span><span style="color: #666666">.</span>_target(<span style="color: #666666">*</span><span style="color: #008000">self</span><span style="color: #666666">.</span>_args, <span style="color: #666666">**</span><span style="color: #008000">self</span><span style="color: #666666">.</span>_kwargs)
+  File <span style="color: #008000">&quot;/cvmfs/ganga.cern.ch/Ganga/install/8.6.1/lib/python3.8/site-packages/ganga/GangaCore/Core/GangaThread/WorkerThreads/WorkerThreadPool.py&quot;</span>, line <span style="color: #666666">91</span>, in __worker_thread
+    item <span style="color: #666666">=</span> <span style="color: #008000">self</span><span style="color: #666666">.</span>__queue<span style="color: #666666">.</span>get(<span style="color: #008000; font-weight: bold">True</span>, timeout)
+  File <span style="color: #008000">&quot;/cvmfs/sft.cern.ch/lcg/releases/LCG_100/Python/3.8.6/x86_64-centos7-gcc9-opt/lib/python3.8/queue.py&quot;</span>, line <span style="color: #666666">182</span>, in get
+    <span style="color: #008000; font-weight: bold">return</span> item
+  File <span style="color: #008000">&quot;/cvmfs/sft.cern.ch/lcg/releases/LCG_100/Python/3.8.6/x86_64-centos7-gcc9-opt/lib/python3.8/threading.py&quot;</span>, line <span style="color: #666666">309</span>, in wait
+    <span style="color: #008000; font-weight: bold">return</span> gotit
+</pre></div>
+
+<h2>User_Worker_2</h2>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span>  File <span style="color: #008000">&quot;/cvmfs/sft.cern.ch/lcg/releases/LCG_100/Python/3.8.6/x86_64-centos7-gcc9-opt/lib/python3.8/threading.py&quot;</span>, line <span style="color: #666666">890</span>, in _bootstrap
+    <span style="color: #008000">self</span><span style="color: #666666">.</span>_bootstrap_inner()
+  File <span style="color: #008000">&quot;/cvmfs/sft.cern.ch/lcg/releases/LCG_100/Python/3.8.6/x86_64-centos7-gcc9-opt/lib/python3.8/threading.py&quot;</span>, line <span style="color: #666666">932</span>, in _bootstrap_inner
+    <span style="color: #008000">self</span><span style="color: #666666">.</span>run()
+  File <span style="color: #008000">&quot;/cvmfs/sft.cern.ch/lcg/releases/LCG_100/Python/3.8.6/x86_64-centos7-gcc9-opt/lib/python3.8/threading.py&quot;</span>, line <span style="color: #666666">870</span>, in run
+    <span style="color: #008000">self</span><span style="color: #666666">.</span>_target(<span style="color: #666666">*</span><span style="color: #008000">self</span><span style="color: #666666">.</span>_args, <span style="color: #666666">**</span><span style="color: #008000">self</span><span style="color: #666666">.</span>_kwargs)
+  File <span style="color: #008000">&quot;/cvmfs/ganga.cern.ch/Ganga/install/8.6.1/lib/python3.8/site-packages/ganga/GangaCore/Core/GangaThread/WorkerThreads/WorkerThreadPool.py&quot;</span>, line <span style="color: #666666">91</span>, in __worker_thread
+    item <span style="color: #666666">=</span> <span style="color: #008000">self</span><span style="color: #666666">.</span>__queue<span style="color: #666666">.</span>get(<span style="color: #008000; font-weight: bold">True</span>, timeout)
+  File <span style="color: #008000">&quot;/cvmfs/sft.cern.ch/lcg/releases/LCG_100/Python/3.8.6/x86_64-centos7-gcc9-opt/lib/python3.8/queue.py&quot;</span>, line <span style="color: #666666">182</span>, in get
+    <span style="color: #008000; font-weight: bold">return</span> item
+  File <span style="color: #008000">&quot;/cvmfs/sft.cern.ch/lcg/releases/LCG_100/Python/3.8.6/x86_64-centos7-gcc9-opt/lib/python3.8/threading.py&quot;</span>, line <span style="color: #666666">309</span>, in wait
+    <span style="color: #008000; font-weight: bold">return</span> gotit
+</pre></div>
+
+<h2>User_Worker_1</h2>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span>  File <span style="color: #008000">&quot;/cvmfs/sft.cern.ch/lcg/releases/LCG_100/Python/3.8.6/x86_64-centos7-gcc9-opt/lib/python3.8/threading.py&quot;</span>, line <span style="color: #666666">890</span>, in _bootstrap
+    <span style="color: #008000">self</span><span style="color: #666666">.</span>_bootstrap_inner()
+  File <span style="color: #008000">&quot;/cvmfs/sft.cern.ch/lcg/releases/LCG_100/Python/3.8.6/x86_64-centos7-gcc9-opt/lib/python3.8/threading.py&quot;</span>, line <span style="color: #666666">932</span>, in _bootstrap_inner
+    <span style="color: #008000">self</span><span style="color: #666666">.</span>run()
+  File <span style="color: #008000">&quot;/cvmfs/sft.cern.ch/lcg/releases/LCG_100/Python/3.8.6/x86_64-centos7-gcc9-opt/lib/python3.8/threading.py&quot;</span>, line <span style="color: #666666">870</span>, in run
+    <span style="color: #008000">self</span><span style="color: #666666">.</span>_target(<span style="color: #666666">*</span><span style="color: #008000">self</span><span style="color: #666666">.</span>_args, <span style="color: #666666">**</span><span style="color: #008000">self</span><span style="color: #666666">.</span>_kwargs)
+  File <span style="color: #008000">&quot;/cvmfs/ganga.cern.ch/Ganga/install/8.6.1/lib/python3.8/site-packages/ganga/GangaCore/Core/GangaThread/WorkerThreads/WorkerThreadPool.py&quot;</span>, line <span style="color: #666666">91</span>, in __worker_thread
+    item <span style="color: #666666">=</span> <span style="color: #008000">self</span><span style="color: #666666">.</span>__queue<span style="color: #666666">.</span>get(<span style="color: #008000; font-weight: bold">True</span>, timeout)
+  File <span style="color: #008000">&quot;/cvmfs/sft.cern.ch/lcg/releases/LCG_100/Python/3.8.6/x86_64-centos7-gcc9-opt/lib/python3.8/queue.py&quot;</span>, line <span style="color: #666666">182</span>, in get
+    <span style="color: #008000; font-weight: bold">return</span> item
+  File <span style="color: #008000">&quot;/cvmfs/sft.cern.ch/lcg/releases/LCG_100/Python/3.8.6/x86_64-centos7-gcc9-opt/lib/python3.8/threading.py&quot;</span>, line <span style="color: #666666">309</span>, in wait
+    <span style="color: #008000; font-weight: bold">return</span> gotit
+</pre></div>
+
+<h2>User_Worker_0</h2>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span>  File <span style="color: #008000">&quot;/cvmfs/sft.cern.ch/lcg/releases/LCG_100/Python/3.8.6/x86_64-centos7-gcc9-opt/lib/python3.8/threading.py&quot;</span>, line <span style="color: #666666">890</span>, in _bootstrap
+    <span style="color: #008000">self</span><span style="color: #666666">.</span>_bootstrap_inner()
+  File <span style="color: #008000">&quot;/cvmfs/sft.cern.ch/lcg/releases/LCG_100/Python/3.8.6/x86_64-centos7-gcc9-opt/lib/python3.8/threading.py&quot;</span>, line <span style="color: #666666">932</span>, in _bootstrap_inner
+    <span style="color: #008000">self</span><span style="color: #666666">.</span>run()
+  File <span style="color: #008000">&quot;/cvmfs/sft.cern.ch/lcg/releases/LCG_100/Python/3.8.6/x86_64-centos7-gcc9-opt/lib/python3.8/threading.py&quot;</span>, line <span style="color: #666666">870</span>, in run
+    <span style="color: #008000">self</span><span style="color: #666666">.</span>_target(<span style="color: #666666">*</span><span style="color: #008000">self</span><span style="color: #666666">.</span>_args, <span style="color: #666666">**</span><span style="color: #008000">self</span><span style="color: #666666">.</span>_kwargs)
+  File <span style="color: #008000">&quot;/cvmfs/ganga.cern.ch/Ganga/install/8.6.1/lib/python3.8/site-packages/ganga/GangaCore/Core/GangaThread/WorkerThreads/WorkerThreadPool.py&quot;</span>, line <span style="color: #666666">91</span>, in __worker_thread
+    item <span style="color: #666666">=</span> <span style="color: #008000">self</span><span style="color: #666666">.</span>__queue<span style="color: #666666">.</span>get(<span style="color: #008000; font-weight: bold">True</span>, timeout)
+  File <span style="color: #008000">&quot;/cvmfs/sft.cern.ch/lcg/releases/LCG_100/Python/3.8.6/x86_64-centos7-gcc9-opt/lib/python3.8/queue.py&quot;</span>, line <span style="color: #666666">182</span>, in get
+    <span style="color: #008000; font-weight: bold">return</span> item
+  File <span style="color: #008000">&quot;/cvmfs/sft.cern.ch/lcg/releases/LCG_100/Python/3.8.6/x86_64-centos7-gcc9-opt/lib/python3.8/threading.py&quot;</span>, line <span style="color: #666666">309</span>, in wait
+    <span style="color: #008000; font-weight: bold">return</span> gotit
+</pre></div>
+
+<h2>GANGA_Update_Thread_MonitoringWorker_4_1663628899296</h2>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span>  File <span style="color: #008000">&quot;/cvmfs/sft.cern.ch/lcg/releases/LCG_100/Python/3.8.6/x86_64-centos7-gcc9-opt/lib/python3.8/threading.py&quot;</span>, line <span style="color: #666666">890</span>, in _bootstrap
+    <span style="color: #008000">self</span><span style="color: #666666">.</span>_bootstrap_inner()
+  File <span style="color: #008000">&quot;/cvmfs/sft.cern.ch/lcg/releases/LCG_100/Python/3.8.6/x86_64-centos7-gcc9-opt/lib/python3.8/threading.py&quot;</span>, line <span style="color: #666666">932</span>, in _bootstrap_inner
+    <span style="color: #008000">self</span><span style="color: #666666">.</span>run()
+  File <span style="color: #008000">&quot;/cvmfs/ganga.cern.ch/Ganga/install/8.6.1/lib/python3.8/site-packages/ganga/GangaCore/Core/MonitoringComponent/Local_GangaMC_Service.py&quot;</span>, line <span style="color: #666666">112</span>, in run
+    <span style="color: #008000">self</span><span style="color: #666666">.</span>_execUpdateAction()
+  File <span style="color: #008000">&quot;/cvmfs/ganga.cern.ch/Ganga/install/8.6.1/lib/python3.8/site-packages/ganga/GangaCore/Core/MonitoringComponent/Local_GangaMC_Service.py&quot;</span>, line <span style="color: #666666">128</span>, in _execUpdateAction
+    action <span style="color: #666666">=</span> Qin<span style="color: #666666">.</span>get(block<span style="color: #666666">=</span><span style="color: #008000; font-weight: bold">True</span>, timeout<span style="color: #666666">=0.5</span>)
+  File <span style="color: #008000">&quot;/cvmfs/sft.cern.ch/lcg/releases/LCG_100/Python/3.8.6/x86_64-centos7-gcc9-opt/lib/python3.8/queue.py&quot;</span>, line <span style="color: #666666">179</span>, in get
+    <span style="color: #008000">self</span><span style="color: #666666">.</span>not_empty<span style="color: #666666">.</span>wait(remaining)
+  File <span style="color: #008000">&quot;/cvmfs/sft.cern.ch/lcg/releases/LCG_100/Python/3.8.6/x86_64-centos7-gcc9-opt/lib/python3.8/threading.py&quot;</span>, line <span style="color: #666666">306</span>, in wait
+    gotit <span style="color: #666666">=</span> waiter<span style="color: #666666">.</span>acquire(<span style="color: #008000; font-weight: bold">True</span>, timeout)
+</pre></div>
+
+<h2>GANGA_Update_Thread_MonitoringWorker_3_1663628899296</h2>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span>  File <span style="color: #008000">&quot;/cvmfs/sft.cern.ch/lcg/releases/LCG_100/Python/3.8.6/x86_64-centos7-gcc9-opt/lib/python3.8/threading.py&quot;</span>, line <span style="color: #666666">890</span>, in _bootstrap
+    <span style="color: #008000">self</span><span style="color: #666666">.</span>_bootstrap_inner()
+  File <span style="color: #008000">&quot;/cvmfs/sft.cern.ch/lcg/releases/LCG_100/Python/3.8.6/x86_64-centos7-gcc9-opt/lib/python3.8/threading.py&quot;</span>, line <span style="color: #666666">932</span>, in _bootstrap_inner
+    <span style="color: #008000">self</span><span style="color: #666666">.</span>run()
+  File <span style="color: #008000">&quot;/cvmfs/ganga.cern.ch/Ganga/install/8.6.1/lib/python3.8/site-packages/ganga/GangaCore/Core/MonitoringComponent/Local_GangaMC_Service.py&quot;</span>, line <span style="color: #666666">112</span>, in run
+    <span style="color: #008000">self</span><span style="color: #666666">.</span>_execUpdateAction()
+  File <span style="color: #008000">&quot;/cvmfs/ganga.cern.ch/Ganga/install/8.6.1/lib/python3.8/site-packages/ganga/GangaCore/Core/MonitoringComponent/Local_GangaMC_Service.py&quot;</span>, line <span style="color: #666666">128</span>, in _execUpdateAction
+    action <span style="color: #666666">=</span> Qin<span style="color: #666666">.</span>get(block<span style="color: #666666">=</span><span style="color: #008000; font-weight: bold">True</span>, timeout<span style="color: #666666">=0.5</span>)
+  File <span style="color: #008000">&quot;/cvmfs/sft.cern.ch/lcg/releases/LCG_100/Python/3.8.6/x86_64-centos7-gcc9-opt/lib/python3.8/queue.py&quot;</span>, line <span style="color: #666666">179</span>, in get
+    <span style="color: #008000">self</span><span style="color: #666666">.</span>not_empty<span style="color: #666666">.</span>wait(remaining)
+  File <span style="color: #008000">&quot;/cvmfs/sft.cern.ch/lcg/releases/LCG_100/Python/3.8.6/x86_64-centos7-gcc9-opt/lib/python3.8/threading.py&quot;</span>, line <span style="color: #666666">306</span>, in wait
+    gotit <span style="color: #666666">=</span> waiter<span style="color: #666666">.</span>acquire(<span style="color: #008000; font-weight: bold">True</span>, timeout)
+</pre></div>
+
+<h2>GANGA_Update_Thread_MonitoringWorker_2_1663628899295</h2>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span>  File <span style="color: #008000">&quot;/cvmfs/sft.cern.ch/lcg/releases/LCG_100/Python/3.8.6/x86_64-centos7-gcc9-opt/lib/python3.8/threading.py&quot;</span>, line <span style="color: #666666">890</span>, in _bootstrap
+    <span style="color: #008000">self</span><span style="color: #666666">.</span>_bootstrap_inner()
+  File <span style="color: #008000">&quot;/cvmfs/sft.cern.ch/lcg/releases/LCG_100/Python/3.8.6/x86_64-centos7-gcc9-opt/lib/python3.8/threading.py&quot;</span>, line <span style="color: #666666">932</span>, in _bootstrap_inner
+    <span style="color: #008000">self</span><span style="color: #666666">.</span>run()
+  File <span style="color: #008000">&quot;/cvmfs/ganga.cern.ch/Ganga/install/8.6.1/lib/python3.8/site-packages/ganga/GangaCore/Core/MonitoringComponent/Local_GangaMC_Service.py&quot;</span>, line <span style="color: #666666">112</span>, in run
+    <span style="color: #008000">self</span><span style="color: #666666">.</span>_execUpdateAction()
+  File <span style="color: #008000">&quot;/cvmfs/ganga.cern.ch/Ganga/install/8.6.1/lib/python3.8/site-packages/ganga/GangaCore/Core/MonitoringComponent/Local_GangaMC_Service.py&quot;</span>, line <span style="color: #666666">128</span>, in _execUpdateAction
+    action <span style="color: #666666">=</span> Qin<span style="color: #666666">.</span>get(block<span style="color: #666666">=</span><span style="color: #008000; font-weight: bold">True</span>, timeout<span style="color: #666666">=0.5</span>)
+  File <span style="color: #008000">&quot;/cvmfs/sft.cern.ch/lcg/releases/LCG_100/Python/3.8.6/x86_64-centos7-gcc9-opt/lib/python3.8/queue.py&quot;</span>, line <span style="color: #666666">179</span>, in get
+    <span style="color: #008000">self</span><span style="color: #666666">.</span>not_empty<span style="color: #666666">.</span>wait(remaining)
+  File <span style="color: #008000">&quot;/cvmfs/sft.cern.ch/lcg/releases/LCG_100/Python/3.8.6/x86_64-centos7-gcc9-opt/lib/python3.8/threading.py&quot;</span>, line <span style="color: #666666">306</span>, in wait
+    gotit <span style="color: #666666">=</span> waiter<span style="color: #666666">.</span>acquire(<span style="color: #008000; font-weight: bold">True</span>, timeout)
+</pre></div>
+
+<h2>GANGA_Update_Thread_MonitoringWorker_1_1663628899295</h2>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span>  File <span style="color: #008000">&quot;/cvmfs/sft.cern.ch/lcg/releases/LCG_100/Python/3.8.6/x86_64-centos7-gcc9-opt/lib/python3.8/threading.py&quot;</span>, line <span style="color: #666666">890</span>, in _bootstrap
+    <span style="color: #008000">self</span><span style="color: #666666">.</span>_bootstrap_inner()
+  File <span style="color: #008000">&quot;/cvmfs/sft.cern.ch/lcg/releases/LCG_100/Python/3.8.6/x86_64-centos7-gcc9-opt/lib/python3.8/threading.py&quot;</span>, line <span style="color: #666666">932</span>, in _bootstrap_inner
+    <span style="color: #008000">self</span><span style="color: #666666">.</span>run()
+  File <span style="color: #008000">&quot;/cvmfs/ganga.cern.ch/Ganga/install/8.6.1/lib/python3.8/site-packages/ganga/GangaCore/Core/MonitoringComponent/Local_GangaMC_Service.py&quot;</span>, line <span style="color: #666666">112</span>, in run
+    <span style="color: #008000">self</span><span style="color: #666666">.</span>_execUpdateAction()
+  File <span style="color: #008000">&quot;/cvmfs/ganga.cern.ch/Ganga/install/8.6.1/lib/python3.8/site-packages/ganga/GangaCore/Core/MonitoringComponent/Local_GangaMC_Service.py&quot;</span>, line <span style="color: #666666">128</span>, in _execUpdateAction
+    action <span style="color: #666666">=</span> Qin<span style="color: #666666">.</span>get(block<span style="color: #666666">=</span><span style="color: #008000; font-weight: bold">True</span>, timeout<span style="color: #666666">=0.5</span>)
+  File <span style="color: #008000">&quot;/cvmfs/sft.cern.ch/lcg/releases/LCG_100/Python/3.8.6/x86_64-centos7-gcc9-opt/lib/python3.8/queue.py&quot;</span>, line <span style="color: #666666">179</span>, in get
+    <span style="color: #008000">self</span><span style="color: #666666">.</span>not_empty<span style="color: #666666">.</span>wait(remaining)
+  File <span style="color: #008000">&quot;/cvmfs/sft.cern.ch/lcg/releases/LCG_100/Python/3.8.6/x86_64-centos7-gcc9-opt/lib/python3.8/threading.py&quot;</span>, line <span style="color: #666666">306</span>, in wait
+    gotit <span style="color: #666666">=</span> waiter<span style="color: #666666">.</span>acquire(<span style="color: #008000; font-weight: bold">True</span>, timeout)
+</pre></div>
+
+<h2>GANGA_Update_Thread_MonitoringWorker_0_1663628899291</h2>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span>  File <span style="color: #008000">&quot;/cvmfs/sft.cern.ch/lcg/releases/LCG_100/Python/3.8.6/x86_64-centos7-gcc9-opt/lib/python3.8/threading.py&quot;</span>, line <span style="color: #666666">890</span>, in _bootstrap
+    <span style="color: #008000">self</span><span style="color: #666666">.</span>_bootstrap_inner()
+  File <span style="color: #008000">&quot;/cvmfs/sft.cern.ch/lcg/releases/LCG_100/Python/3.8.6/x86_64-centos7-gcc9-opt/lib/python3.8/threading.py&quot;</span>, line <span style="color: #666666">932</span>, in _bootstrap_inner
+    <span style="color: #008000">self</span><span style="color: #666666">.</span>run()
+  File <span style="color: #008000">&quot;/cvmfs/ganga.cern.ch/Ganga/install/8.6.1/lib/python3.8/site-packages/ganga/GangaCore/Core/MonitoringComponent/Local_GangaMC_Service.py&quot;</span>, line <span style="color: #666666">112</span>, in run
+    <span style="color: #008000">self</span><span style="color: #666666">.</span>_execUpdateAction()
+  File <span style="color: #008000">&quot;/cvmfs/ganga.cern.ch/Ganga/install/8.6.1/lib/python3.8/site-packages/ganga/GangaCore/Core/MonitoringComponent/Local_GangaMC_Service.py&quot;</span>, line <span style="color: #666666">128</span>, in _execUpdateAction
+    action <span style="color: #666666">=</span> Qin<span style="color: #666666">.</span>get(block<span style="color: #666666">=</span><span style="color: #008000; font-weight: bold">True</span>, timeout<span style="color: #666666">=0.5</span>)
+  File <span style="color: #008000">&quot;/cvmfs/sft.cern.ch/lcg/releases/LCG_100/Python/3.8.6/x86_64-centos7-gcc9-opt/lib/python3.8/queue.py&quot;</span>, line <span style="color: #666666">179</span>, in get
+    <span style="color: #008000">self</span><span style="color: #666666">.</span>not_empty<span style="color: #666666">.</span>wait(remaining)
+  File <span style="color: #008000">&quot;/cvmfs/sft.cern.ch/lcg/releases/LCG_100/Python/3.8.6/x86_64-centos7-gcc9-opt/lib/python3.8/threading.py&quot;</span>, line <span style="color: #666666">306</span>, in wait
+    gotit <span style="color: #666666">=</span> waiter<span style="color: #666666">.</span>acquire(<span style="color: #008000; font-weight: bold">True</span>, timeout)
+</pre></div>
+
+<h2>MainThread</h2>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span>  File <span style="color: #008000">&quot;/cvmfs/ganga.cern.ch/Ganga/install/LATEST/bin/ganga&quot;</span>, line <span style="color: #666666">99</span>, in &lt;module&gt;
+    GangaCore<span style="color: #666666">.</span>Runtime<span style="color: #666666">.</span>_prog<span style="color: #666666">.</span>run(GPI<span style="color: #666666">.</span><span style="color: #19177C">__dict__</span>)
+  File <span style="color: #008000">&quot;/cvmfs/ganga.cern.ch/Ganga/install/8.6.1/lib/python3.8/site-packages/ganga/GangaCore/Runtime/bootstrap.py&quot;</span>, line <span style="color: #666666">1138</span>, in run
+    <span style="color: #008000">self</span><span style="color: #666666">.</span>launch_IPython(local_ns)
+  File <span style="color: #008000">&quot;/cvmfs/ganga.cern.ch/Ganga/install/8.6.1/lib/python3.8/site-packages/ganga/GangaCore/Runtime/bootstrap.py&quot;</span>, line <span style="color: #666666">1223</span>, in launch_IPython
+    IPython<span style="color: #666666">.</span>start_ipython(argv<span style="color: #666666">=</span>[], user_ns<span style="color: #666666">=</span>local_ns, local_ns<span style="color: #666666">=</span>local_ns, module<span style="color: #666666">=</span>GangaCore<span style="color: #666666">.</span>GPI, config<span style="color: #666666">=</span>cfg)
+  File <span style="color: #008000">&quot;/cvmfs/ganga.cern.ch/Ganga/install/8.6.1/lib/python3.8/site-packages/IPython/__init__.py&quot;</span>, line <span style="color: #666666">124</span>, in start_ipython
+    <span style="color: #008000; font-weight: bold">return</span> launch_new_instance(argv<span style="color: #666666">=</span>argv, <span style="color: #666666">**</span>kwargs)
+  File <span style="color: #008000">&quot;/cvmfs/ganga.cern.ch/Ganga/install/8.6.1/lib/python3.8/site-packages/traitlets/config/application.py&quot;</span>, line <span style="color: #666666">976</span>, in launch_instance
+    app<span style="color: #666666">.</span>start()
+  File <span style="color: #008000">&quot;/cvmfs/ganga.cern.ch/Ganga/install/8.6.1/lib/python3.8/site-packages/IPython/terminal/ipapp.py&quot;</span>, line <span style="color: #666666">318</span>, in start
+    <span style="color: #008000">self</span><span style="color: #666666">.</span>shell<span style="color: #666666">.</span>mainloop()
+  File <span style="color: #008000">&quot;/cvmfs/ganga.cern.ch/Ganga/install/8.6.1/lib/python3.8/site-packages/IPython/terminal/interactiveshell.py&quot;</span>, line <span style="color: #666666">680</span>, in mainloop
+    <span style="color: #008000">self</span><span style="color: #666666">.</span>interact()
+  File <span style="color: #008000">&quot;/cvmfs/ganga.cern.ch/Ganga/install/8.6.1/lib/python3.8/site-packages/IPython/terminal/interactiveshell.py&quot;</span>, line <span style="color: #666666">673</span>, in interact
+    <span style="color: #008000">self</span><span style="color: #666666">.</span>run_cell(code, store_history<span style="color: #666666">=</span><span style="color: #008000; font-weight: bold">True</span>)
+  File <span style="color: #008000">&quot;/cvmfs/ganga.cern.ch/Ganga/install/8.6.1/lib/python3.8/site-packages/IPython/core/interactiveshell.py&quot;</span>, line <span style="color: #666666">2881</span>, in run_cell
+    result <span style="color: #666666">=</span> <span style="color: #008000">self</span><span style="color: #666666">.</span>_run_cell(
+  File <span style="color: #008000">&quot;/cvmfs/ganga.cern.ch/Ganga/install/8.6.1/lib/python3.8/site-packages/IPython/core/interactiveshell.py&quot;</span>, line <span style="color: #666666">2936</span>, in _run_cell
+    <span style="color: #008000; font-weight: bold">return</span> runner(coro)
+  File <span style="color: #008000">&quot;/cvmfs/ganga.cern.ch/Ganga/install/8.6.1/lib/python3.8/site-packages/IPython/core/async_helpers.py&quot;</span>, line <span style="color: #666666">129</span>, in _pseudo_sync_runner
+    coro<span style="color: #666666">.</span>send(<span style="color: #008000; font-weight: bold">None</span>)
+  File <span style="color: #008000">&quot;/cvmfs/ganga.cern.ch/Ganga/install/8.6.1/lib/python3.8/site-packages/IPython/core/interactiveshell.py&quot;</span>, line <span style="color: #666666">3135</span>, in run_cell_async
+    has_raised <span style="color: #666666">=</span> <span style="color: #008000; font-weight: bold">await</span> <span style="color: #008000">self</span><span style="color: #666666">.</span>run_ast_nodes(code_ast<span style="color: #666666">.</span>body, cell_name,
+  File <span style="color: #008000">&quot;/cvmfs/ganga.cern.ch/Ganga/install/8.6.1/lib/python3.8/site-packages/IPython/core/interactiveshell.py&quot;</span>, line <span style="color: #666666">3338</span>, in run_ast_nodes
+    <span style="color: #008000; font-weight: bold">if</span> <span style="color: #008000; font-weight: bold">await</span> <span style="color: #008000">self</span><span style="color: #666666">.</span>run_code(code, result, async_<span style="color: #666666">=</span>asy):
+  File <span style="color: #008000">&quot;/cvmfs/ganga.cern.ch/Ganga/install/8.6.1/lib/python3.8/site-packages/IPython/core/interactiveshell.py&quot;</span>, line <span style="color: #666666">3416</span>, in run_code
+    <span style="color: #008000">self</span><span style="color: #666666">.</span>CustomTB(etype, value, tb)
+  File <span style="color: #008000">&quot;/cvmfs/ganga.cern.ch/Ganga/install/8.6.1/lib/python3.8/site-packages/IPython/core/interactiveshell.py&quot;</span>, line <span style="color: #666666">1863</span>, in wrapped
+    stb <span style="color: #666666">=</span> handler(<span style="color: #008000">self</span>,etype,value,tb,tb_offset<span style="color: #666666">=</span>tb_offset)
+  File <span style="color: #008000">&quot;/cvmfs/ganga.cern.ch/Ganga/install/8.6.1/lib/python3.8/site-packages/ganga/GangaCore/Runtime/ganga_extension.py&quot;</span>, line <span style="color: #666666">19</span>, in error_handler
+    exception_obj<span style="color: #666666">.</span>showtraceback((etype, value, tb), tb_offset<span style="color: #666666">=</span>tb_offset)
+  File <span style="color: #008000">&quot;/cvmfs/ganga.cern.ch/Ganga/install/8.6.1/lib/python3.8/site-packages/IPython/core/interactiveshell.py&quot;</span>, line <span style="color: #666666">1993</span>, in showtraceback
+    stb <span style="color: #666666">=</span> <span style="color: #008000">self</span><span style="color: #666666">.</span>InteractiveTB<span style="color: #666666">.</span>structured_traceback(
+  File <span style="color: #008000">&quot;/cvmfs/ganga.cern.ch/Ganga/install/8.6.1/lib/python3.8/site-packages/IPython/core/ultratb.py&quot;</span>, line <span style="color: #666666">1118</span>, in structured_traceback
+    <span style="color: #008000; font-weight: bold">return</span> FormattedTB<span style="color: #666666">.</span>structured_traceback(
+  File <span style="color: #008000">&quot;/cvmfs/ganga.cern.ch/Ganga/install/8.6.1/lib/python3.8/site-packages/IPython/core/ultratb.py&quot;</span>, line <span style="color: #666666">1012</span>, in structured_traceback
+    <span style="color: #008000; font-weight: bold">return</span> VerboseTB<span style="color: #666666">.</span>structured_traceback(
+  File <span style="color: #008000">&quot;/cvmfs/ganga.cern.ch/Ganga/install/8.6.1/lib/python3.8/site-packages/IPython/core/ultratb.py&quot;</span>, line <span style="color: #666666">865</span>, in structured_traceback
+    formatted_exception <span style="color: #666666">=</span> <span style="color: #008000">self</span><span style="color: #666666">.</span>format_exception_as_a_whole(etype, evalue, etb, number_of_lines_of_context,
+  File <span style="color: #008000">&quot;/cvmfs/ganga.cern.ch/Ganga/install/8.6.1/lib/python3.8/site-packages/IPython/core/ultratb.py&quot;</span>, line <span style="color: #666666">799</span>, in format_exception_as_a_whole
+    <span style="color: #008000">self</span><span style="color: #666666">.</span>get_records(etb, number_of_lines_of_context, tb_offset) <span style="color: #008000; font-weight: bold">if</span> etb <span style="color: #008000; font-weight: bold">else</span> []
+  File <span style="color: #008000">&quot;/cvmfs/ganga.cern.ch/Ganga/install/8.6.1/lib/python3.8/site-packages/IPython/core/ultratb.py&quot;</span>, line <span style="color: #666666">854</span>, in get_records
+    <span style="color: #008000; font-weight: bold">return</span> <span style="color: #008000">list</span>(stack_data<span style="color: #666666">.</span>FrameInfo<span style="color: #666666">.</span>stack_data(etb, options<span style="color: #666666">=</span>options))[tb_offset:]
+  File <span style="color: #008000">&quot;/cvmfs/ganga.cern.ch/Ganga/install/8.6.1/lib/python3.8/site-packages/stack_data/core.py&quot;</span>, line <span style="color: #666666">563</span>, in stack_data
+    <span style="color: #008000; font-weight: bold">yield from</span> collapse_repeated(
+  File <span style="color: #008000">&quot;/cvmfs/ganga.cern.ch/Ganga/install/8.6.1/lib/python3.8/site-packages/stack_data/utils.py&quot;</span>, line <span style="color: #666666">84</span>, in collapse_repeated
+    <span style="color: #008000; font-weight: bold">yield from</span> <span style="color: #008000">map</span>(mapper, original_group)
+  File <span style="color: #008000">&quot;/cvmfs/ganga.cern.ch/Ganga/install/8.6.1/lib/python3.8/site-packages/stack_data/core.py&quot;</span>, line <span style="color: #666666">553</span>, in mapper
+    <span style="color: #008000; font-weight: bold">return</span> <span style="color: #008000">cls</span>(f, options)
+  File <span style="color: #008000">&quot;/cvmfs/ganga.cern.ch/Ganga/install/8.6.1/lib/python3.8/site-packages/stack_data/core.py&quot;</span>, line <span style="color: #666666">518</span>, in __init__
+    <span style="color: #008000">self</span><span style="color: #666666">.</span>executing <span style="color: #666666">=</span> Source<span style="color: #666666">.</span>executing(frame_or_tb)
+  File <span style="color: #008000">&quot;/cvmfs/ganga.cern.ch/Ganga/install/8.6.1/lib/python3.8/site-packages/executing/executing.py&quot;</span>, line <span style="color: #666666">364</span>, in executing
+    args <span style="color: #666666">=</span> find(source<span style="color: #666666">=</span><span style="color: #008000">cls</span><span style="color: #666666">.</span>for_frame(frame), retry_cache<span style="color: #666666">=</span><span style="color: #008000; font-weight: bold">True</span>)
+  File <span style="color: #008000">&quot;/cvmfs/ganga.cern.ch/Ganga/install/8.6.1/lib/python3.8/site-packages/executing/executing.py&quot;</span>, line <span style="color: #666666">247</span>, in for_frame
+    <span style="color: #008000; font-weight: bold">return</span> <span style="color: #008000">cls</span><span style="color: #666666">.</span>for_filename(frame<span style="color: #666666">.</span>f_code<span style="color: #666666">.</span>co_filename, frame<span style="color: #666666">.</span>f_globals <span style="color: #AA22FF; font-weight: bold">or</span> {}, use_cache)
+  File <span style="color: #008000">&quot;/cvmfs/ganga.cern.ch/Ganga/install/8.6.1/lib/python3.8/site-packages/executing/executing.py&quot;</span>, line <span style="color: #666666">265</span>, in for_filename
+    result <span style="color: #666666">=</span> source_cache[filename] <span style="color: #666666">=</span> <span style="color: #008000">cls</span><span style="color: #666666">.</span>_for_filename_and_lines(filename, lines)
+  File <span style="color: #008000">&quot;/cvmfs/ganga.cern.ch/Ganga/install/8.6.1/lib/python3.8/site-packages/executing/executing.py&quot;</span>, line <span style="color: #666666">276</span>, in _for_filename_and_lines
+    result <span style="color: #666666">=</span> source_cache[(filename, lines)] <span style="color: #666666">=</span> <span style="color: #008000">cls</span>(filename, lines)
+  File <span style="color: #008000">&quot;/cvmfs/ganga.cern.ch/Ganga/install/8.6.1/lib/python3.8/site-packages/stack_data/core.py&quot;</span>, line <span style="color: #666666">81</span>, in __init__
+    <span style="color: #008000">self</span><span style="color: #666666">.</span>asttokens()
+  File <span style="color: #008000">&quot;/cvmfs/ganga.cern.ch/Ganga/install/8.6.1/lib/python3.8/site-packages/executing/executing.py&quot;</span>, line <span style="color: #666666">408</span>, in asttokens
+    <span style="color: #008000; font-weight: bold">return</span> ASTTokens(
+  File <span style="color: #008000">&quot;/cvmfs/ganga.cern.ch/Ganga/install/8.6.1/lib/python3.8/site-packages/asttokens/asttokens.py&quot;</span>, line <span style="color: #666666">73</span>, in __init__
+    <span style="color: #008000">self</span><span style="color: #666666">.</span>mark_tokens(<span style="color: #008000">self</span><span style="color: #666666">.</span>_tree)
+  File <span style="color: #008000">&quot;/cvmfs/ganga.cern.ch/Ganga/install/8.6.1/lib/python3.8/site-packages/asttokens/asttokens.py&quot;</span>, line <span style="color: #666666">85</span>, in mark_tokens
+    <span style="color: #008000; font-weight: bold">from</span> <span style="color: #0000FF; font-weight: bold">.mark_tokens</span> <span style="color: #008000; font-weight: bold">import</span> MarkTokens <span style="color: #3D7B7B; font-style: italic"># to avoid import loops</span>
+  File <span style="color: #008000">&quot;&lt;frozen importlib._bootstrap&gt;&quot;</span>, line <span style="color: #666666">991</span>, in _find_and_load
+  File <span style="color: #008000">&quot;&lt;frozen importlib._bootstrap&gt;&quot;</span>, line <span style="color: #666666">975</span>, in _find_and_load_unlocked
+  File <span style="color: #008000">&quot;&lt;frozen importlib._bootstrap&gt;&quot;</span>, line <span style="color: #666666">671</span>, in _load_unlocked
+  File <span style="color: #008000">&quot;&lt;frozen importlib._bootstrap_external&gt;&quot;</span>, line <span style="color: #666666">783</span>, in exec_module
+  File <span style="color: #008000">&quot;&lt;frozen importlib._bootstrap&gt;&quot;</span>, line <span style="color: #666666">219</span>, in _call_with_frames_removed
+  File <span style="color: #008000">&quot;/cvmfs/ganga.cern.ch/Ganga/install/8.6.1/lib/python3.8/site-packages/asttokens/mark_tokens.py&quot;</span>, line <span style="color: #666666">29</span>, in &lt;module&gt;
+    <span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">astroid.node_classes</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #0000FF; font-weight: bold">nc</span>
+  File <span style="color: #008000">&quot;&lt;frozen importlib._bootstrap&gt;&quot;</span>, line <span style="color: #666666">991</span>, in _find_and_load
+  File <span style="color: #008000">&quot;&lt;frozen importlib._bootstrap&gt;&quot;</span>, line <span style="color: #666666">961</span>, in _find_and_load_unlocked
+  File <span style="color: #008000">&quot;&lt;frozen importlib._bootstrap&gt;&quot;</span>, line <span style="color: #666666">219</span>, in _call_with_frames_removed
+  File <span style="color: #008000">&quot;&lt;frozen importlib._bootstrap&gt;&quot;</span>, line <span style="color: #666666">991</span>, in _find_and_load
+  File <span style="color: #008000">&quot;&lt;frozen importlib._bootstrap&gt;&quot;</span>, line <span style="color: #666666">975</span>, in _find_and_load_unlocked
+  File <span style="color: #008000">&quot;&lt;frozen importlib._bootstrap&gt;&quot;</span>, line <span style="color: #666666">671</span>, in _load_unlocked
+  File <span style="color: #008000">&quot;&lt;frozen importlib._bootstrap_external&gt;&quot;</span>, line <span style="color: #666666">783</span>, in exec_module
+  File <span style="color: #008000">&quot;&lt;frozen importlib._bootstrap&gt;&quot;</span>, line <span style="color: #666666">219</span>, in _call_with_frames_removed
+  File <span style="color: #008000">&quot;/cvmfs/sft.cern.ch/lcg/views/LCG_100/x86_64-centos7-gcc9-opt/lib/python3.8/site-packages/astroid/__init__.py&quot;</span>, line <span style="color: #666666">63</span>, in &lt;module&gt;
+    <span style="color: #008000; font-weight: bold">from</span> <span style="color: #0000FF; font-weight: bold">astroid.nodes</span> <span style="color: #008000; font-weight: bold">import</span> <span style="color: #666666">*</span>
+  File <span style="color: #008000">&quot;&lt;frozen importlib._bootstrap&gt;&quot;</span>, line <span style="color: #666666">991</span>, in _find_and_load
+  File <span style="color: #008000">&quot;&lt;frozen importlib._bootstrap&gt;&quot;</span>, line <span style="color: #666666">975</span>, in _find_and_load_unlocked
+  File <span style="color: #008000">&quot;&lt;frozen importlib._bootstrap&gt;&quot;</span>, line <span style="color: #666666">671</span>, in _load_unlocked
+  File <span style="color: #008000">&quot;&lt;frozen importlib._bootstrap_external&gt;&quot;</span>, line <span style="color: #666666">783</span>, in exec_module
+  File <span style="color: #008000">&quot;&lt;frozen importlib._bootstrap&gt;&quot;</span>, line <span style="color: #666666">219</span>, in _call_with_frames_removed
+  File <span style="color: #008000">&quot;/cvmfs/sft.cern.ch/lcg/views/LCG_100/x86_64-centos7-gcc9-opt/lib/python3.8/site-packages/astroid/nodes.py&quot;</span>, line <span style="color: #666666">23</span>, in &lt;module&gt;
+    <span style="color: #008000; font-weight: bold">from</span> <span style="color: #0000FF; font-weight: bold">astroid.node_classes</span> <span style="color: #008000; font-weight: bold">import</span> (
+  File <span style="color: #008000">&quot;&lt;frozen importlib._bootstrap&gt;&quot;</span>, line <span style="color: #666666">991</span>, in _find_and_load
+  File <span style="color: #008000">&quot;&lt;frozen importlib._bootstrap&gt;&quot;</span>, line <span style="color: #666666">975</span>, in _find_and_load_unlocked
+  File <span style="color: #008000">&quot;&lt;frozen importlib._bootstrap&gt;&quot;</span>, line <span style="color: #666666">671</span>, in _load_unlocked
+  File <span style="color: #008000">&quot;&lt;frozen importlib._bootstrap_external&gt;&quot;</span>, line <span style="color: #666666">783</span>, in exec_module
+  File <span style="color: #008000">&quot;&lt;frozen importlib._bootstrap&gt;&quot;</span>, line <span style="color: #666666">219</span>, in _call_with_frames_removed
+  File <span style="color: #008000">&quot;/cvmfs/sft.cern.ch/lcg/views/LCG_100/x86_64-centos7-gcc9-opt/lib/python3.8/site-packages/astroid/node_classes.py&quot;</span>, line <span style="color: #666666">38</span>, in &lt;module&gt;
+    <span style="color: #008000; font-weight: bold">from</span> <span style="color: #0000FF; font-weight: bold">astroid</span> <span style="color: #008000; font-weight: bold">import</span> bases
+  File <span style="color: #008000">&quot;&lt;frozen importlib._bootstrap&gt;&quot;</span>, line <span style="color: #666666">1042</span>, in _handle_fromlist
+  File <span style="color: #008000">&quot;&lt;frozen importlib._bootstrap&gt;&quot;</span>, line <span style="color: #666666">219</span>, in _call_with_frames_removed
+  File <span style="color: #008000">&quot;&lt;frozen importlib._bootstrap&gt;&quot;</span>, line <span style="color: #666666">991</span>, in _find_and_load
+  File <span style="color: #008000">&quot;&lt;frozen importlib._bootstrap&gt;&quot;</span>, line <span style="color: #666666">975</span>, in _find_and_load_unlocked
+  File <span style="color: #008000">&quot;&lt;frozen importlib._bootstrap&gt;&quot;</span>, line <span style="color: #666666">671</span>, in _load_unlocked
+  File <span style="color: #008000">&quot;&lt;frozen importlib._bootstrap_external&gt;&quot;</span>, line <span style="color: #666666">783</span>, in exec_module
+  File <span style="color: #008000">&quot;&lt;frozen importlib._bootstrap&gt;&quot;</span>, line <span style="color: #666666">219</span>, in _call_with_frames_removed
+  File <span style="color: #008000">&quot;/cvmfs/sft.cern.ch/lcg/views/LCG_100/x86_64-centos7-gcc9-opt/lib/python3.8/site-packages/astroid/bases.py&quot;</span>, line <span style="color: #666666">32</span>, in &lt;module&gt;
+    MANAGER <span style="color: #666666">=</span> manager<span style="color: #666666">.</span>AstroidManager()
+  File <span style="color: #008000">&quot;/cvmfs/sft.cern.ch/lcg/views/LCG_100/x86_64-centos7-gcc9-opt/lib/python3.8/site-packages/astroid/util.py&quot;</span>, line <span style="color: #666666">26</span>, in &lt;lambda&gt;
+    <span style="color: #008000; font-weight: bold">lambda</span>: importlib<span style="color: #666666">.</span>import_module(<span style="color: #BA2121">&quot;.&quot;</span> <span style="color: #666666">+</span> module_name, <span style="color: #BA2121">&quot;astroid&quot;</span>)
+  File <span style="color: #008000">&quot;/cvmfs/sft.cern.ch/lcg/releases/LCG_100/Python/3.8.6/x86_64-centos7-gcc9-opt/lib/python3.8/importlib/__init__.py&quot;</span>, line <span style="color: #666666">127</span>, in import_module
+    <span style="color: #008000; font-weight: bold">return</span> _bootstrap<span style="color: #666666">.</span>_gcd_import(name[level:], package, level)
+  File <span style="color: #008000">&quot;&lt;frozen importlib._bootstrap&gt;&quot;</span>, line <span style="color: #666666">1014</span>, in _gcd_import
+  File <span style="color: #008000">&quot;&lt;frozen importlib._bootstrap&gt;&quot;</span>, line <span style="color: #666666">991</span>, in _find_and_load
+  File <span style="color: #008000">&quot;&lt;frozen importlib._bootstrap&gt;&quot;</span>, line <span style="color: #666666">975</span>, in _find_and_load_unlocked
+  File <span style="color: #008000">&quot;&lt;frozen importlib._bootstrap&gt;&quot;</span>, line <span style="color: #666666">671</span>, in _load_unlocked
+  File <span style="color: #008000">&quot;&lt;frozen importlib._bootstrap_external&gt;&quot;</span>, line <span style="color: #666666">783</span>, in exec_module
+  File <span style="color: #008000">&quot;&lt;frozen importlib._bootstrap&gt;&quot;</span>, line <span style="color: #666666">219</span>, in _call_with_frames_removed
+  File <span style="color: #008000">&quot;/cvmfs/sft.cern.ch/lcg/views/LCG_100/x86_64-centos7-gcc9-opt/lib/python3.8/site-packages/astroid/manager.py&quot;</span>, line <span style="color: #666666">24</span>, in &lt;module&gt;
+    <span style="color: #008000; font-weight: bold">from</span> <span style="color: #0000FF; font-weight: bold">astroid.interpreter._import</span> <span style="color: #008000; font-weight: bold">import</span> spec
+  File <span style="color: #008000">&quot;&lt;frozen importlib._bootstrap&gt;&quot;</span>, line <span style="color: #666666">1042</span>, in _handle_fromlist
+  File <span style="color: #008000">&quot;&lt;frozen importlib._bootstrap&gt;&quot;</span>, line <span style="color: #666666">219</span>, in _call_with_frames_removed
+  File <span style="color: #008000">&quot;&lt;frozen importlib._bootstrap&gt;&quot;</span>, line <span style="color: #666666">991</span>, in _find_and_load
+  File <span style="color: #008000">&quot;&lt;frozen importlib._bootstrap&gt;&quot;</span>, line <span style="color: #666666">975</span>, in _find_and_load_unlocked
+  File <span style="color: #008000">&quot;&lt;frozen importlib._bootstrap&gt;&quot;</span>, line <span style="color: #666666">671</span>, in _load_unlocked
+  File <span style="color: #008000">&quot;&lt;frozen importlib._bootstrap_external&gt;&quot;</span>, line <span style="color: #666666">783</span>, in exec_module
+  File <span style="color: #008000">&quot;&lt;frozen importlib._bootstrap&gt;&quot;</span>, line <span style="color: #666666">219</span>, in _call_with_frames_removed
+  File <span style="color: #008000">&quot;/cvmfs/sft.cern.ch/lcg/views/LCG_100/x86_64-centos7-gcc9-opt/lib/python3.8/site-packages/astroid/interpreter/_import/spec.py&quot;</span>, line <span style="color: #666666">11</span>, in &lt;module&gt;
+    <span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">distutils</span>
+  File <span style="color: #008000">&quot;&lt;frozen importlib._bootstrap&gt;&quot;</span>, line <span style="color: #666666">991</span>, in _find_and_load
+  File <span style="color: #008000">&quot;&lt;frozen importlib._bootstrap&gt;&quot;</span>, line <span style="color: #666666">971</span>, in _find_and_load_unlocked
+  File <span style="color: #008000">&quot;&lt;frozen importlib._bootstrap&gt;&quot;</span>, line <span style="color: #666666">914</span>, in _find_spec
+  File <span style="color: #008000">&quot;/cvmfs/ganga.cern.ch/Ganga/install/8.6.1/lib/python3.8/site-packages/_distutils_hack/__init__.py&quot;</span>, line <span style="color: #666666">97</span>, in find_spec
+    <span style="color: #008000; font-weight: bold">return</span> method()
+  File <span style="color: #008000">&quot;/cvmfs/ganga.cern.ch/Ganga/install/8.6.1/lib/python3.8/site-packages/_distutils_hack/__init__.py&quot;</span>, line <span style="color: #666666">108</span>, in spec_for_distutils
+    mod <span style="color: #666666">=</span> importlib<span style="color: #666666">.</span>import_module(<span style="color: #BA2121">&#39;setuptools._distutils&#39;</span>)
+  File <span style="color: #008000">&quot;/cvmfs/sft.cern.ch/lcg/releases/LCG_100/Python/3.8.6/x86_64-centos7-gcc9-opt/lib/python3.8/importlib/__init__.py&quot;</span>, line <span style="color: #666666">127</span>, in import_module
+    <span style="color: #008000; font-weight: bold">return</span> _bootstrap<span style="color: #666666">.</span>_gcd_import(name[level:], package, level)
+  File <span style="color: #008000">&quot;&lt;frozen importlib._bootstrap&gt;&quot;</span>, line <span style="color: #666666">1014</span>, in _gcd_import
+  File <span style="color: #008000">&quot;&lt;frozen importlib._bootstrap&gt;&quot;</span>, line <span style="color: #666666">991</span>, in _find_and_load
+  File <span style="color: #008000">&quot;&lt;frozen importlib._bootstrap&gt;&quot;</span>, line <span style="color: #666666">961</span>, in _find_and_load_unlocked
+  File <span style="color: #008000">&quot;&lt;frozen importlib._bootstrap&gt;&quot;</span>, line <span style="color: #666666">219</span>, in _call_with_frames_removed
+  File <span style="color: #008000">&quot;&lt;frozen importlib._bootstrap&gt;&quot;</span>, line <span style="color: #666666">1014</span>, in _gcd_import
+  File <span style="color: #008000">&quot;&lt;frozen importlib._bootstrap&gt;&quot;</span>, line <span style="color: #666666">991</span>, in _find_and_load
+  File <span style="color: #008000">&quot;&lt;frozen importlib._bootstrap&gt;&quot;</span>, line <span style="color: #666666">975</span>, in _find_and_load_unlocked
+  File <span style="color: #008000">&quot;&lt;frozen importlib._bootstrap&gt;&quot;</span>, line <span style="color: #666666">671</span>, in _load_unlocked
+  File <span style="color: #008000">&quot;&lt;frozen importlib._bootstrap_external&gt;&quot;</span>, line <span style="color: #666666">783</span>, in exec_module
+  File <span style="color: #008000">&quot;&lt;frozen importlib._bootstrap&gt;&quot;</span>, line <span style="color: #666666">219</span>, in _call_with_frames_removed
+  File <span style="color: #008000">&quot;/cvmfs/ganga.cern.ch/Ganga/install/8.6.1/lib/python3.8/site-packages/setuptools/__init__.py&quot;</span>, line <span style="color: #666666">16</span>, in &lt;module&gt;
+    <span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">setuptools.version</span>
+  File <span style="color: #008000">&quot;&lt;frozen importlib._bootstrap&gt;&quot;</span>, line <span style="color: #666666">991</span>, in _find_and_load
+  File <span style="color: #008000">&quot;&lt;frozen importlib._bootstrap&gt;&quot;</span>, line <span style="color: #666666">975</span>, in _find_and_load_unlocked
+  File <span style="color: #008000">&quot;&lt;frozen importlib._bootstrap&gt;&quot;</span>, line <span style="color: #666666">671</span>, in _load_unlocked
+  File <span style="color: #008000">&quot;&lt;frozen importlib._bootstrap_external&gt;&quot;</span>, line <span style="color: #666666">783</span>, in exec_module
+  File <span style="color: #008000">&quot;&lt;frozen importlib._bootstrap&gt;&quot;</span>, line <span style="color: #666666">219</span>, in _call_with_frames_removed
+  File <span style="color: #008000">&quot;/cvmfs/ganga.cern.ch/Ganga/install/8.6.1/lib/python3.8/site-packages/setuptools/version.py&quot;</span>, line <span style="color: #666666">1</span>, in &lt;module&gt;
+    <span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">pkg_resources</span>
+  File <span style="color: #008000">&quot;&lt;frozen importlib._bootstrap&gt;&quot;</span>, line <span style="color: #666666">991</span>, in _find_and_load
+  File <span style="color: #008000">&quot;&lt;frozen importlib._bootstrap&gt;&quot;</span>, line <span style="color: #666666">975</span>, in _find_and_load_unlocked
+  File <span style="color: #008000">&quot;&lt;frozen importlib._bootstrap&gt;&quot;</span>, line <span style="color: #666666">671</span>, in _load_unlocked
+  File <span style="color: #008000">&quot;&lt;frozen importlib._bootstrap_external&gt;&quot;</span>, line <span style="color: #666666">783</span>, in exec_module
+  File <span style="color: #008000">&quot;&lt;frozen importlib._bootstrap&gt;&quot;</span>, line <span style="color: #666666">219</span>, in _call_with_frames_removed
+  File <span style="color: #008000">&quot;/cvmfs/ganga.cern.ch/Ganga/install/8.6.1/lib/python3.8/site-packages/pkg_resources/__init__.py&quot;</span>, line <span style="color: #666666">3260</span>, in &lt;module&gt;
+    <span style="color: #008000; font-weight: bold">def</span> <span style="color: #0000FF">_initialize_master_working_set</span>():
+  File <span style="color: #008000">&quot;/cvmfs/ganga.cern.ch/Ganga/install/8.6.1/lib/python3.8/site-packages/pkg_resources/__init__.py&quot;</span>, line <span style="color: #666666">3234</span>, in _call_aside
+    f(<span style="color: #666666">*</span>args, <span style="color: #666666">**</span>kwargs)
+  File <span style="color: #008000">&quot;/cvmfs/ganga.cern.ch/Ganga/install/8.6.1/lib/python3.8/site-packages/pkg_resources/__init__.py&quot;</span>, line <span style="color: #666666">3272</span>, in _initialize_master_working_set
+    working_set <span style="color: #666666">=</span> WorkingSet<span style="color: #666666">.</span>_build_master()
+  File <span style="color: #008000">&quot;/cvmfs/ganga.cern.ch/Ganga/install/8.6.1/lib/python3.8/site-packages/pkg_resources/__init__.py&quot;</span>, line <span style="color: #666666">572</span>, in _build_master
+    ws <span style="color: #666666">=</span> <span style="color: #008000">cls</span>()
+  File <span style="color: #008000">&quot;/cvmfs/ganga.cern.ch/Ganga/install/8.6.1/lib/python3.8/site-packages/pkg_resources/__init__.py&quot;</span>, line <span style="color: #666666">565</span>, in __init__
+    <span style="color: #008000">self</span><span style="color: #666666">.</span>add_entry(entry)
+  File <span style="color: #008000">&quot;/cvmfs/ganga.cern.ch/Ganga/install/8.6.1/lib/python3.8/site-packages/pkg_resources/__init__.py&quot;</span>, line <span style="color: #666666">621</span>, in add_entry
+    <span style="color: #008000; font-weight: bold">for</span> dist <span style="color: #AA22FF; font-weight: bold">in</span> find_distributions(entry, <span style="color: #008000; font-weight: bold">True</span>):
+  File <span style="color: #008000">&quot;/cvmfs/ganga.cern.ch/Ganga/install/8.6.1/lib/python3.8/site-packages/pkg_resources/__init__.py&quot;</span>, line <span style="color: #666666">2096</span>, in find_on_path
+    <span style="color: #008000; font-weight: bold">for</span> dist <span style="color: #AA22FF; font-weight: bold">in</span> factory(fullpath):
+  File <span style="color: #008000">&quot;/cvmfs/ganga.cern.ch/Ganga/install/8.6.1/lib/python3.8/site-packages/pkg_resources/__init__.py&quot;</span>, line <span style="color: #666666">2153</span>, in distributions_from_metadata
+    <span style="color: #008000; font-weight: bold">if</span> os<span style="color: #666666">.</span>path<span style="color: #666666">.</span>isdir(path):
+  File <span style="color: #008000">&quot;/cvmfs/sft.cern.ch/lcg/releases/LCG_100/Python/3.8.6/x86_64-centos7-gcc9-opt/lib/python3.8/genericpath.py&quot;</span>, line <span style="color: #666666">42</span>, in isdir
+    st <span style="color: #666666">=</span> os<span style="color: #666666">.</span>stat(s)
+</pre></div>
+
+<small>2022-09-19T23:09:22.553453</small>
+</body>
+</html>

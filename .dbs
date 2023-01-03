@@ -1,0 +1,27 @@
+.dbs
+{
+    Agent
+    {
+    run (./.agents arg2 arg3)
+    }
+	Test
+	{
+		test-absm
+	},
+	Databases
+	{
+		CERN.CH
+	},
+	Local
+	{
+		Host = localhost,
+		User = mghorbani,
+		Password = ************
+	},
+	DIRAC
+	{
+		Host = localhost,
+		User = mghorbani,
+		Password = ************
+	}
+}

@@ -1,0 +1,27 @@
+.voms
+{
+    Agent
+    {
+    run (arg1 arg2 arg3)
+    },
+	VOMS
+	{
+		gridpp = Active,
+		SubmitPools = Pool_GridPP.org,
+		VOAdmin = bsanteramo,
+		VOMSName = gridpp,
+		VOMSServers
+	},
+	voms2.gridpp
+	{
+		DN = [/C=IT/O=INFN/OU=Host/L=CNAF/CN=voms2.cnaf.infn.it],
+		CA = [/C=IT/O=INFN/CN=INFN CA],
+		Port = 15009
+	},
+	voms-dirac
+	{
+		DN = [/C=IT/O=INFN/OU=Host/L=Padova/CN=voms-02.pd.infn.it],
+		CA = [/C=IT/O=INFN/CN=INFN CA],
+		Port = 15009
+	}
+}

@@ -1,0 +1,55 @@
+.dirac_user
+{
+	Agents
+	{
+	run (./.agents ./.dbs agr3)
+	}
+	Setup 
+	{
+		Framework = DevInstance
+	},
+	Setups
+	{
+		Framework = DeveloperSetup
+	},
+	Test
+	{
+		Framework = DeveloperSetup
+	},
+	Systems
+	{
+		Framework = GridPP
+	},
+	DevInstance
+	{
+		URLs = davs://dc2-grid-64.brunel.ac.uk/dpm/brunel.ac.uk/home/gridpp/gridpp/user/m/maziar.ghorbani
+	},
+	Services
+	{
+		Test = DevInstance
+	},
+	Registry
+	{
+		Users = mghorbani,null
+	},
+	mghorbani
+	{
+		DN = /C=UK/O=eScience/OU=Brunel/L=ECE/CN=maziar ghorbani/CN=5053192958/,CN=3530538741
+	},
+	Email
+	{
+		Email = maziar.ghorbani@brunel.ac.uk
+	},
+	Groups
+	{
+		Properties = {CSAdministrator,JobAdministrator,ServiceAdministrator,ProxyDelegation,FullDele}
+	},
+	Hosts
+	{
+		host = dc2-grid-64.brunel.ac.uk
+	},
+	URLs
+	{
+		davs://dc2-grid-64.brunel.ac.uk/dpm/brunel.ac.uk/home/gridpp/gridpp/user/m/maziar.ghorbani
+	}
+}

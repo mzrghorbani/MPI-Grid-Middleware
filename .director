@@ -1,0 +1,23 @@
+.director
+{
+  # agent cycle length in seconds
+  PollingTime = 600,
+  # one or more site names served by the agent
+  Site = LCG.CNAF.ch,
+  # one or more CE names served by the agent. All CEs defined for the sites by default
+  CEs = davs://dc2-grid-64.brunel.ac.uk,
+  # Types of the CEs served by the agent
+  CETypes = SSH,
+  # The DN of the user with whose credentials the pilots are submitted
+  GenericPilotDN = /O=GRID-FR/C=FR/O=CNRS/OU=CPPM/CN=Maziar Ghorbani,
+  # The group of the user with whose credentials the pilots are submitted
+  GenericPilotGroup = lhcb_pilot,
+  # The agent working directory
+  WorkDirectory = ~/workspace/grid/dirac/config,
+  # Flag to perform pilot status updates
+  UpdatePilotStatus = True,
+  # Flag to perform pilot output retrieval
+  GetPilotOutput = True,
+  # Flag to send pilot info to the Accounting service
+  SendPilotAccounting = True
+}

@@ -1,0 +1,11 @@
+.agents
+{
+	agents
+	{
+	proxy = voms-proxy-init,
+	LogLevel = "INFO",
+	LogBackends = dirac,
+	PollingTime = 60,
+	Message = "Agent active!"
+	}
+}

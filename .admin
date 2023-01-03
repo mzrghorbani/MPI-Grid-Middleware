@@ -1,0 +1,34 @@
+.admin
+{
+	EMail
+	{
+		User = maziar.ghorbani@brunel.ac.uk,
+		Logging = maziar.ghorbani@brunel.ac.uk
+	},
+	Production
+	{
+		Middleware
+	},
+	Manager
+	{
+		User = mghorbani,
+		Group = gridpp_user
+	},
+	ProductionManager
+	{
+		User = mghorbani,
+		Group = gridpp_user
+	},
+	DataManager
+	{
+		User = mghorbani,
+		Group = gridpp_user
+	},
+	JobDescription
+	{
+		AllowedJobTypes += MPICH-G2,
+		AllowedJobTypes += User,
+		AllowedJobTypes += Test,
+		SubmitPools += Pool_Gridpp
+	}
+}

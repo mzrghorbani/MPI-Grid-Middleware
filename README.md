@@ -1,3 +1,28 @@
+Overwriting Middleware Configuration on the Primary Node of the Grid Cluster
+
+The middleware is designed to override the existing configuration files in the grid middleware.
+
+Note: This modification requires admin access.
+
+Steps to Clone the Repository and Override the Existing Configuration Files
+Clone the repository:
+
+    git clone https://github.com/mzrghorbani/MPI-Grid-Middleware.git
+
+Navigate to the repository directory:
+
+    cd MPI-Grid-Middleware
+
+Make the override script executable:
+
+    chmod +x override.sh
+
+Modify (SOURCE_DIR and TARGET_DIR), and run the override script:
+
+    bash override.sh <SOURCE_DIR> <TARGET_DIR>
+
+If you are familiar with the job submission process, please skip to the Practical Example section.
+
 Useful resources:
 
     https://buildmedia.readthedocs.org/media/pdf/dirac/rel-v6r15/dirac.pdf
@@ -76,3 +101,35 @@ Job Output:
     dirac = Dirac()
     jobid = sys.argv[1]
     print dirac.getOutputSandbox(jobid)
+
+
+Practical Example:
+
+Ensure you have DIRAC, MPICH, and Python with the mpi4py and PyYAML libraries installed.
+
+Set Up DIRAC Environment:
+
+    source /path/to/DIRAC/bashrc
+
+Configure Your Resources:
+
+    Edit the config.yml file to specify the number of CPUs, nodes, and CPUs per task.
+
+Make the Executable Script Executable or use existing template:
+
+    chmod +x header
+
+Submit Jobs:
+
+Run the python script to submit 100 jobs, each containing 20 tasks to DIRAC.
+
+    python3 PYheader
+
+Monitor and Retrieve Results:
+
+Use DIRAC commands to monitor job status and retrieve results.
+
+    dirac-wms-job-status <JobID>
+    dirac-wms-job-get-output <JobID>
+
+The added template setup has been used to submit 100 jobs each containing 20 tasks in parallel. Please feel free to modify for different settings.

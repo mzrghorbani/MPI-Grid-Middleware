@@ -1,0 +1,5 @@
+num_cpus: 16384
+num_nodes: 64
+cpu_per_task: 8
+num_tasks: 20
+

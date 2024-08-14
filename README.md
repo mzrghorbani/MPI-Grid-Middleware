@@ -25,7 +25,7 @@ If you are familiar with the job submission process, please skip to the Practica
 
 Useful resources:
 
-    https://buildmedia.readthedocs.org/media/pdf/dirac/rel-v6r15/dirac.pdf
+    https://dirac.readthedocs.io/en/latest/UserGuide/GettingStarted/InstallingClient/index.html
 
 
 Install DIRAC:
@@ -102,10 +102,22 @@ Job Output:
     jobid = sys.argv[1]
     print dirac.getOutputSandbox(jobid)
 
-
 Practical Example:
 
-Ensure you have DIRAC, MPICH, and Python with the mpi4py and PyYAML libraries installed.
+Ensure mpi4py libraries are installed. If not, plesae follow instructions below for Ubuntu 22.04:
+
+    mkdir -p $HOME/opt/openmpi
+    cd $HOME/Downloads
+    wget https://download.open-mpi.org/release/open-mpi/v4.1/openmpi-4.1.2.tar.gz
+    tar -xf openmpi-4.1.2.tar.gz
+    cd openmpi-4.1.2
+    ./configure --prefix=$HOME/opt/openmpi
+    make all && make install
+
+    export CC=$HOME/opt/openmpi/bin/mpicc
+    export PATH=$PATH:$HOME/opt/openmpi/bin
+
+    pip install mpi4py
 
 Set Up DIRAC Environment:
 

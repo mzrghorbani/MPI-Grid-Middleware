@@ -129,13 +129,13 @@ Configure Your Resources:
 
 Make the Executable Script Executable or use existing template:
 
-    chmod +x header
+    chmod +x run_simulation.sh
 
 Submit Jobs:
 
 Run the python script to submit 100 jobs, each containing 20 tasks to DIRAC.
 
-    python3 PYheader
+    python3 submit_simulation.py
 
 Monitor and Retrieve Results:
 

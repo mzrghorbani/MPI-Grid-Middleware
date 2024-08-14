@@ -1,38 +1,50 @@
-Overwriting Middleware Configuration on the Primary Node of the Grid Cluster
+## Prerequisites:
 
-The middleware is designed to override the existing configuration files in the grid middleware.
+Before proceeding, ensure that you meet the following requirements:
 
-Note: This modification requires admin access.
+### Certification Authority (CA): 
 
-Steps to Clone the Repository and Override the Existing Configuration Files
-Clone the repository:
+You must have a certificate from the UK eScience Certification Authority (UKCA) "https://ca.grid-support.ac.uk/". This certificate is essential for accessing grid resources. 
 
-    git clone https://github.com/mzrghorbani/MPI-Grid-Middleware.git
+### Grid Virtual Organisation (VO): 
 
-Navigate to the repository directory:
+You must be a registered member of a Grid Virtual Organisation, such as GridPP. Membership is required for job submission and resource access.
 
-    cd MPI-Grid-Middleware
+### Certificate Installation: 
 
-Make the override script executable:
+Install your certificate in the $HOME/.globus directory on your local machine. This is necessary for authentication during grid operations.
 
-    chmod +x override.sh
+## Overwriting Middleware Configuration on the Primary Node of the Grid Cluster
 
-Modify (SOURCE_DIR and TARGET_DIR), and run the override script:
+The middleware is designed to override the existing configuration files in the existing DIRAC grid middleware.
 
-    bash override.sh <SOURCE_DIR> <TARGET_DIR>
+### Steps to Clone the Repository and Override the Existing Configuration Files
 
-If you are familiar with the job submission process, please skip to the Practical Example section.
+    1. Clone the repository:
 
-Useful resources:
+        git clone https://github.com/mzrghorbani/MPI-Grid-Middleware.git
+
+    2. Navigate to the repository directory:
+
+        cd MPI-Grid-Middleware
+
+    3. Configuring UKCA by executing .ca:
+
+        chmod .ca && bash .ca
+
+The .ca script is designed to convert UKCA certificates to .pem and initialize the DIRAC proxy with the specified Grid user group.
+
+## If DIRAC is installed on your local machine, skip the following installation section.
+
+### Useful resources:
 
     https://dirac.readthedocs.io/en/latest/UserGuide/GettingStarted/InstallingClient/index.html
 
-
-Install DIRAC:
+### Install DIRAC:
 
     wget -np -O dirac-install https://github.com/DIRACGrid/DIRAC/raw/integration/Core/scripts/dirac-instachmod +x dirac-install
 
-Directory structure:
+### Directory structure:
 
     drwxr-xr-x 8 mghorbani root 2048 Mar 25 2010 Linux_x86_64_glibc-2.5
     drwxr-xr-x 16 mghorbani root 2048 Oct 12 12:13 DIRAC
@@ -40,7 +52,7 @@ Directory structure:
     drwxr-xr-x 2 mghorbani root 10240 Oct 12 17:11 scripts
     -rw-r--r-- 1 mghorbani root 998 Oct 12 17:15 bashrc
 
-Install VO Client:
+### Install VO Client:
 
     wget -np -O dirac-install http://lhcbproject.web.cern.ch/lhcbproject/dist/Dirac_project/dirac-installchmod +x dirac-install
     dirac-install -V formation
@@ -48,41 +60,58 @@ Install VO Client:
     dirac-proxy-init
     dirac-configure defaults_formation.cfg
 
-Configure VO Client:
+### Configure VO Client:
 
     dirac-configure -V dirac -S Dirac-Production -C dips://dirac.in2p3.fr:9135/Configuration/Server
 
-Simple Test JDL:
+### Modify (SOURCE_DIR and TARGET_DIR) in override.sh in MPI-Grid-Middleware:
 
-    Executable = "/bin/cp";
-    Arguments = "my.file my.copy";
-    InputSandbox = {"my.file"};
+This script is executed first during job submission to add the middleware to the grid. The source directory (SOURCE_DIR) is the /path/to/MPI-Grid-Middleware and the target directory (TARGET_DIR) is the DIRAC parent directory.
+
+    chmod +x override.sh && bash override.sh
+
+Note: By this point, we have installed DIRAC and integrated all scripts from MPI-Grid-Middleware repository into it.
+
+## Simple MPI Configuration Test:
+
+A simple MPI test can be executed to ensure all configurations are correct. 
+
+### In MPI-Grid-Middleware directory, run:
+
+    python3 test_MPI.py
+
+This script is designed to return all available CPUs on the local machine.
+
+### If you prefer JDL, you can create a simple MPI job using MPItest.sh:
+
+    Executable = "MPItest.sh";
+    Arguments = "";
     StdOutput = "std.out";
     StdError = "std.err";
-    OutputSandbox = {"std.out","std.err","my.copy"};
+    OutputSandbox = {"std.out", "std.err"};
     CPUTime = 10;
 
-Status:
+Check the status of a job:
 
     dirac-wms-job-status <jobid>
 
-Get output:
+Get the output:
 
     dirac-wms-job-get-output <jobid>
 
-DIRAC API:
+### For flexibility and simplicity, we recommend using DIRAC Python API. 
+
+The DIRAC API interface looks like this:
 
     from DIRAC.Interfaces.API.Job import Job
     from DIRAC.Interfaces.API.Dirac import Dirac
     dirac = Dirac()
     j = Job()
     j.setCPUTime(500)
-    j.setExecutable('/bin/echo hello')
-    j.setExecutable('/bin/hostname')
-    j.setExecutable('/bin/echo hello again')
-    j.setName('API')
+    j.setExecutable('/path/to/MPItest.sh')
+    j.setName('MPI Test Job')
     jobID = dirac.submit(j)
-    print 'Submission Result: ',jobID
+    print('Submission Result: ', jobID)
 
 DIRAC Job Monitoring:
 
@@ -102,9 +131,11 @@ Job Output:
     jobid = sys.argv[1]
     print dirac.getOutputSandbox(jobid)
 
-Practical Example:
+## Practical Example:
 
-Ensure mpi4py libraries are installed. If not, plesae follow instructions below for Ubuntu 22.04:
+The following instructions are designed to automate MPI job submission containing 200 simulations. 
+
+### Ensure mpi4py libraries are installed. If not, please follow the instructions below for Ubuntu 22.04:
 
     mkdir -p $HOME/opt/openmpi
     cd $HOME/Downloads
@@ -119,31 +150,50 @@ Ensure mpi4py libraries are installed. If not, plesae follow instructions below 
 
     pip install mpi4py
 
-Set Up MPI-Grid-Middleware Environment:
+### Set up MPI-Grid-Middleware Environment:
 
     source /path/to/MPI-Grid-Middleware/.bashrc
 
 The .bashrc script is configured for User "mghorbani" with Brunel University GridPP credentials. Please modify this script with your username and credentials.
 
-Configure Your Resources:
+### Configure Your Resources:
 
-    Edit the config.yml file to specify the number of CPUs, nodes, and CPUs per task.
+Edit the config.yml file to specify the number of CPUs, nodes, and CPUs per task.
 
-Make the Executable Script Executable or use existing template:
+### Make the Executable Script Executable or use the existing template:
 
     chmod +x run_simulation.sh
 
-Submit Jobs:
+### Submit MPI Jobs:
 
-Run the python script to submit 100 jobs, each containing 20 tasks to DIRAC.
+Please follow the instructions in the Flu And Coronavirus Simulator (FACS) "https://facs.readthedocs.io/en/latest/" to clone the FACS (simulation model).
+
+Modify config.yml to point to run.py in facs directory. Also, the required resources can be set here:
+
+    num_cpus: 16384
+    num_nodes: 64
+    cpu_per_task: 8
+    num_tasks: 2
+    script_path: "/path/to/facs/run.py"
+
+### Modify run_simulation.sh to contain all locations. Currently, for simplicity, two locations are set:
+
+    locations=("hillingdon" "greater_manchester")
+
+### Run the Python script to submit 100 jobs of "hillingdon" and "greater_manchester":
 
     python3 submit_simulation.py
 
-Monitor and Retrieve Results:
+### Monitor and Retrieve Results:
 
 Use DIRAC commands to monitor job status and retrieve results.
 
     dirac-wms-job-status <JobID>
     dirac-wms-job-get-output <JobID>
 
-The added template setup has been used to submit 100 jobs each containing 20 tasks in parallel. Please feel free to modify for different settings.
+#### Alternatively, you can use the monitoring script:
+
+    python3 test/monitor.py <JobID>
+
+### Note: The installation process can be complex. Please raise a GitHub issue as soon as you encounter a problem. 
+

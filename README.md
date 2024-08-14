@@ -119,9 +119,11 @@ Ensure mpi4py libraries are installed. If not, plesae follow instructions below 
 
     pip install mpi4py
 
-Set Up DIRAC Environment:
+Set Up MPI-Grid-Middleware Environment:
 
-    source /path/to/DIRAC/bashrc
+    source /path/to/MPI-Grid-Middleware/.bashrc
+
+The .bashrc script is configured for User "mghorbani" with Brunel University GridPP credentials. Please modify this script with your username and credentials.
 
 Configure Your Resources:
 

@@ -1,0 +1,16 @@
+heplnx206.pp.rl.ac.uk slots=64
+heplnx207.pp.rl.ac.uk slots=64
+heplnx208.pp.rl.ac.uk slots=64
+ce01.tier2.hep.manchester.ac.uk slots=64
+ce02.tier2.hep.manchester.ac.uk slots=64
+ce03.tier2.hep.manchester.ac.uk slots=64
+vm3.tier2.hep.manchester.ac.uk slots=64
+arc-ce01.gridpp.rl.ac.uk slots=64
+arc-ce02.gridpp.rl.ac.uk slots=64
+arc-ce03.gridpp.rl.ac.uk slots=64
+arc-ce04.gridpp.rl.ac.uk slots=64
+arc-ce05.gridpp.rl.ac.uk slots=64
+ceprod00.grid.hep.ph.ic.ac.uk slots=64
+ceprod01.grid.hep.ph.ic.ac.uk slots=64
+ceprod02.grid.hep.ph.ic.ac.uk slots=64
+ceprod03.grid.hep.ph.ic.ac.uk slots=64

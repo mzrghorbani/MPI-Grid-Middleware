@@ -1,0 +1,22 @@
+Simulation 53001064 contains 20 tasks using 64 CPUs
+Task id 53001064-1 runtime 1 completion 713 s
+Task id 53001064-2 runtime 2 completion 813 s 
+Task id 53001064-3 runtime 3 completion 1130 s 
+Task id 53001064-4 runtime 4 completion 1194 s
+Task id 53001064-5 runtime 5 completion 1356 s
+Task id 53001064-6 runtime 6 completion 2377 s
+Task id 53001064-7 runtime 7 completion 3067 s
+Task id 53001064-8 runtime 8 completion 4011 s
+Task id 53001064-9 runtime 9 completion 4124 s
+Task id 53001064-10 runtime 10 completion 4128 s
+Task id 53001064-11 runtime 11 completion 4358 s
+Task id 53001064-12 runtime 12 completion 4368 s
+Task id 53001064-13 runtime 13 completion 4581 s
+Task id 53001064-14 runtime 14 completion 4624 s
+Task id 53001064-15 runtime 15 completion 4745 s
+Task id 53001064-16 runtime 16 completion 4802 s
+Task id 53001064-17 runtime 17 completion 5489 s
+Task id 53001064-18 runtime 18 completion 5490 s
+Task id 53001064-19 runtime 19 completion 7111 s
+Task id 53001064-20 runtime 20 completion 10982 s 
+

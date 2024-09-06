@@ -1,0 +1,168 @@
+INFO: DIRAC JobID: 53001064
+INFO: Shared dir: /proc/self/fd/3->/nfs/53001064_2000t/Linux-x86_64/mnt/nfs-53001064
+INFO: Submitting 53001064 2024-07-24 08:12:20 
+INFO: CPUTime = 86400; OwnerDN = "/C=UK/O=eScience/OU=Brunel/L=ECE/CN=maziar ghorbani"; OwnerGroup = "gridpp_user"; Setup = "GridPP"; UserPriority = 1; VirtualOrganization = "gridpp";
+INFO: Site LCG.RAL-LCG2.uk.uk reached
+{'CE': 'heplnx206.pp.rl.ac.uk, heplnx207.pp.rl.ac.uk, heplnx208.pp.rl.ac.uk',
+ 'Coordinates': '0.0:0.0',
+ 'Description': 'LCG site',
+ 'Mail': 'contact_info@GOCDB',
+ 'Name': 'LCG.RAL-LCG2.uk',
+ 'SE': 'LCG.RAL-LCG2.uk-disk'}
+INFO: /usr/bin/which: no mpicc in (/cvmfs/dirac.egi.eu/dirac/v8.0.38/Linux-x86_64/bin:/cvmfs/dirac.egi.eu/dirac/v8.0.38/Linux-x86_64/condabin:/home/pool/tgpp001/.local/bin:/home/pool/tgpp001/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/jre-1.6.0-openjdk.x86_64/bin/java/bin)
+/usr/bin/which: no mpirun in (/cvmfs/dirac.egi.eu/dirac/v8.0.38/Linux-x86_64/bin:/cvmfs/dirac.egi.eu/dirac/v8.0.38/Linux-x86_64/condabin:/home/pool/tgpp001/.local/bin:/home/pool/tgpp001/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/jre-1.6.0-openjdk.x86_64/bin/java/bin)
+/usr/bin/which: no mpi.h in (/cvmfs/dirac.egi.eu/dirac/v8.0.38/Linux-x86_64/bin:/cvmfs/dirac.egi.eu/dirac/v8.0.38/Linux-x86_64/condabin:/home/pool/tgpp001/.local/bin:/home/pool/tgpp001/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/jre-1.6.0-openjdk.x86_64/bin/java/bin)
+/pool/condor/dir_209765/FNQLDmMj0z5nzEJDjqAzJLkqISAWgmABFKDm500VDmp1SLDmPNUA8m/DIRAC_4fx9mm6lpilot/53001064/application.sh: line 24: mpdtrace: command not found
+INFO: Configuring MPI env
+=========================================
+DATE: 2024-07-24 08:12:22
+Domain: 0-heplnx206.pp.rl.ac.uk
+Executable: mpifile
+Num Proc: 64
+MPICC: /pool/dir_209765/FNQLDmMj0z5nzEJDjqAzJLkqISAWgmABFKDm500VDmp1SLDmPNUA8m/DIRAC_4fx9mm6lpilot/53001064/lib/mpicc
+MPIRUN: /pool/dir_209765/FNQLDmMj0z5nzEJDjqAzJLkqISAWgmABFKDm500VDmp1SLDmPNUA8m/DIRAC_4fx9mm6lpilot/53001064/lib/mpirun
+MPIH: /pool/dir_209765/FNQLDmMj0z5nzEJDjqAzJLkqISAWgmABFKDm500VDmp1SLDmPNUA8m/DIRAC_4fx9mm6lpilot/53001064/include/mpi.h
+=========================================
+Starting MPI test script 
+INFO: MPI test successful
+INFO: Primary node heplnx206.pp.rl.ac.uk
+INFO: Pooling more nodes...
+{'CEType': 'AREX', 'SubmissionMode': 'Direct', 'wnTmpDir': '.', 'HostRAM': '4096', 'MaxProcessors': '64', 'LastSeen': '24/07/2024', 'UseLocalSchedd': 'False', 'DaysToKeepLogs': '2', 'OS': 'EL9', 'architecture': 'x86_64', 'Tag': 'Token'}
+{'CEType': 'AREX', 'SubmissionMode': 'Direct', 'wnTmpDir': '.', 'HostRAM': '4096', 'MaxProcessors': '64', 'LastSeen': '24/07/2024', 'UseLocalSchedd': 'False', 'DaysToKeepLogs': '2', 'OS': 'None', 'architecture': 'x86_64'}
+{'CEType': 'HTCondorCE', 'SubmissionMode': 'Direct', 'wnTmpDir': '.', 'SI00': '3100', 'HostRAM': '4096', 'MaxProcessors': '64', 'LastSeen': '24/07/2024', 'UseLocalSchedd': 'False', 'DaysToKeepLogs': '2', 'architecture': 'x86_64', 'OS': 'EL9', 'Tag': 'Token'}
+INFO: Ranked CPUs 192
+INFO: Site LCG.UKI-SCOTGRID-GLASGOW.uk reached
+{'CE': 'ce01.gla.scotgrid.ac.uk, ce02.gla.scotgrid.ac.uk, '
+       'ce03.gla.scotgrid.ac.uk, ce04.gla.scotgrid.ac.uk',
+ 'Coordinates': '0.0:0.0',
+ 'Description': 'LCG site',
+ 'Mail': 'contact_info@GOCDB',
+ 'Name': 'UKI-SCOTGRID-GLASGOW',
+ 'SE': 'UKI-SCOTGRID-GLASGOW-CEPH-disk, UKI-SCOTGRID-GLASGOW-disk'}
+INFO: 4 nodes detected 
+INFO: Pooling ce01.gla.scotgrid.ac.uk, ce02.gla.scotgrid.ac.uk, ce03.gla.scotgrid.ac.uk, ce04.gla.scotgrid.ac.uk
+INFO: Ranked CPUs 256
+INFO: Added to node's list '[192]'
+INFO: Primary node heplnx206.pp.rl.ac.uk
+INFO: Reached allowed pooling time. Please increase the time in configuration script .config
+INFO: Excecuting exe in primary node heplnx206.pp.rl.ac.uk
+INFO: Submitting 200 tasks 2024-07-24 08:12:32
+INFO: All tasks submitted 2024-07-24 08:12:35
+INFO: Uploading data from  'SE': 'LCG.RAL-LCG2.uk-disk'
+INFO: Executing task 1-200 local exe in /pool/dir_209765/j0z5nzEJDjqm500VDmp1SLDmPNUA8AzJLkqISAWgmABFKDmFNQLDmM/DIRAC_4fx9mm6lpilot/53001064
+Timestamp, CPU Usage (%), Memory Usage (%), 
+Next CPU Mapping in 3 seconds...
+2024-07-24 08:12:47, 0, 
+2024-07-24 08:13:00, 1.6, 
+2024-07-24 08:13:11, 2.2, 
+Next CPU Mapping in 9 seconds...
+2024-07-24 08:13:26, 0, 
+Processing task 1 at 2024-07-24 08:13:26
+Next CPU Mapping in 12 seconds...
+2024-07-24 08:13:38, 0.5, 
+2024-07-24 08:13:53, 1.1, 
+Next CPU Mapping in 16 seconds...
+2024-07-24 08:14:12, 1, 
+Next CPU Mapping in 2 seconds...
+2024-07-24 08:14:29, 1.6, 
+Processing task 2 at 2024-07-24 08:17:21
+Next CPU Mapping in 1 seconds...
+2024-07-24 08:17:40, 0.5, 
+Next CPU Mapping in 28 seconds...
+2024-07-24 08:17:54, 0, 
+Processing task 3 at 2024-07-24 08:17:54
+Next CPU Mapping in 10 seconds...
+2024-07-24 08:18:08, 1.6, 
+Next CPU Mapping in 13 seconds...
+2024-07-24 08:18:19, 1, 
+Next CPU Mapping in 2 seconds...
+2024-07-24 08:18:30, 1, 
+Next CPU Mapping in 16 seconds...
+2024-07-24 08:18:46, 1.6, 
+Next CPU Mapping in 18 seconds...
+2024-07-24 08:19:04, 0, 
+Processing task 4 at 2024-07-24 08:19:04
+Next CPU Mapping in 14 seconds...
+2024-07-24 08:19:15, 0, 
+Processing task 5 at 2024-07-24 08:19:15
+Next CPU Mapping in 13 seconds...
+2024-07-24 08:19:31, 0.5, 
+Next CPU Mapping in 27 seconds...
+2024-07-24 08:19:42, 2.2, 
+Next CPU Mapping in 11 seconds...
+2024-07-24 08:19:55, 0.5, 
+Next CPU Mapping in 13 seconds...
+2024-07-24 08:20:15, 0.5, 
+Next CPU Mapping in 26 seconds...
+2024-07-24 08:20:25, 2.2, 
+Next CPU Mapping in 13 seconds...
+2024-07-24 08:20:38, 0, 
+Processing task 6 at 2024-07-24 08:20:38
+Next CPU Mapping in 22 seconds...
+2024-07-24 08:20:50, 0, 
+Processing task 7 at 2024-07-24 08:20:50
+Next CPU Mapping in 20 seconds...
+2024-07-24 08:21:06, 1, 
+Next CPU Mapping in 25 seconds...
+2024-07-24 08:21:18, 0.5, 
+Next CPU Mapping in 19 seconds...
+2024-07-24 08:21:38, 3.2, 
+Next CPU Mapping in 19 seconds...
+2024-07-24 08:21:58, 2.7, 
+Next CPU Mapping in 25 seconds...
+2024-07-24 08:22:19, 1.6, 
+Next CPU Mapping in 19 seconds...
+2024-07-24 08:22:35, 0, 
+Processing task 8 at 2024-07-24 08:22:35
+Next CPU Mapping in 20 seconds...
+2024-07-24 08:22:52, 1.1, 
+Next CPU Mapping in 22 seconds...
+2024-07-24 08:23:12, 1.6, 
+Next CPU Mapping in 13 seconds...
+2024-07-24 08:23:23, 1.6, 
+Next CPU Mapping in 30 seconds...
+2024-07-24 08:23:42, 0, 
+Processing task 9 at 2024-07-24 08:23:42
+Next CPU Mapping in 24 seconds...
+2024-07-24 08:23:59, 0, 
+Processing task 10 at 2024-07-24 08:23:59
+Next CPU Mapping in 13 seconds...
+2024-07-24 08:24:16, 0.5, 
+Next CPU Mapping in 25 seconds...
+2024-07-24 08:24:35, 1.1, 
+Next CPU Mapping in 16 seconds...
+2024-07-24 08:24:50, 0, 
+Processing task 20 at 2024-07-24 08:24:50
+Next CPU Mapping in 30 seconds...
+2024-07-24 08:55:01, 0.5, 
+Next CPU Mapping in 10 seconds...
+2024-07-24 08:55:13, 1.6,  
+Task 1 completed 2024-07-24 08:55:50 
+Task 2 completed 2024-07-24 08:55:51
+Task 3 completed 2024-07-24 08:55:51
+Task 4 completed 2024-07-24 08:55:51
+Task 5 completed 2024-07-24 08:55:51
+Task 6 completed 2024-07-24 08:55:51
+Task 7 completed 2024-07-24 08:55:52
+Task 8 completed 2024-07-24 08:55:52
+Task 9 completed 2024-07-24 08:55:52
+Task 10 completed 2024-07-24 08:55:52
+Task 11 completed 2024-07-24 08:55:52
+Task 12 completed 2024-07-24 08:55:52
+Task 13 completed 2024-07-24 08:55:52
+Task 14 completed 2024-07-24 08:55:52
+Task 15 completed 2024-07-24 08:55:52
+Task 16 completed 2024-07-24 08:55:52
+Task 17 completed 2024-07-24 08:55:52
+Task 18 completed 2024-07-24 08:55:52
+Task 19 completed 2024-07-24 08:55:53
+Task 20 completed 2024-07-24 08:55:53 
+INFO: Pausing monitoring 2024-07-24 08:55:53
+INFO: Paused monitoring 2024-07-24 08:55:53
+INFO: All Tasks completed 2024-07-24 08:55:53
+INFO: Fetching results Shared dir: /proc/self/fd/3->/nfs/53001064_20t/Linux-x86_64/mnt/nfs-53001064 2024-07-24 08:55:54
+INFO: Transferring results to /gridpp/user/m/maziar.ghorbani/mydata/53001064/* 2024-07-24 08:55:54
+INFO: Terminating processes by name: pkill -f $JobName 2024-07-24 08:55:54
+INFO: Terminating processes by id: kill -f $JobID 2024-07-24 08:55:55
+INFO: Aborting all processes 2024-07-24 08:55:55
+

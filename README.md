@@ -72,6 +72,20 @@ This script is executed first during job submission to add the middleware to the
 
 Note: By this point, we have installed DIRAC and integrated all scripts from MPI-Grid-Middleware repository into it.
 
+## Pool GridPP Sites and Available Resources using Google Maps API:
+
+An automation script `pool_sites.py` is designed to initialize the [Google Maps](https://developers.google.com/maps) client using an API key to enable distance calculations.
+
+1. Provide a list of grid sites with their names, identifiers, and geographic coordinates.
+2. Set a target_cpus value representing the number of CPUs needed for the simulation tasks.
+3. Start from a predefined grid site, setting an initial search_radius to limit the area for each search iteration.
+4. Once pooling is complete, save the pooled computing elements information into a hostfile.
+5. The hostfile contains availabe CEs with their available CPUs.
+
+Note: Ensure that you have your API_KEY set and DIRAC commands configured for querying grid information.
+
+Optional: Create a distance matrix `distance_matrix.py` for all sites, if required!
+
 ## Simple MPI Configuration Test:
 
 A simple MPI test can be executed to ensure all configurations are correct. 
@@ -135,7 +149,9 @@ Job Output:
 
 The following instructions are designed to automate MPI job submission containing 200 simulations. 
 
-### Ensure mpi4py libraries are installed. If not, please follow the instructions below for Ubuntu 22.04:
+### Ensure mpi4py libraries are installed on your local machine. 
+
+If not, please follow the instructions below for Ubuntu 22.04:
 
     mkdir -p $HOME/opt/openmpi
     cd $HOME/Downloads

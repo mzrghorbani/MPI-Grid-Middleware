@@ -1,14 +1,14 @@
-.proxy
+proxy
 {
-    subject      : [/C=UK/O=eScience/OU=Brunel/L=ECE/CN=maziar ghorbani/CN=5053192958/CN=3530538741],
-    issuer       : [/C=UK/O=eScience/OU=Brunel/L=ECE/CN=maziar ghorbani/CN=5053192958],
-    identity     : /C=UK/O=eScience/OU=Brunel/L=ECE/CN=maziar ghorbani,
-    time         : 340:59:59,
-    DIRAC group  : gridpp_user,
-    path         : [/tmp/x509up_u1000],
-    username     : maziar.ghorbani,
-    properties   : [NormalUser, JobSharing, AccountingMonitor],
-    VOMS         : True,
-    VOMS dir     : [/gridpp/usr/maziar.ghorbani/mydata],
-    Proxies      : [DN/C=UK/O=eScience/OU=Brunel/L=ECE/CN=maziar ghorbani] 
+    subject      = ["/C=UK/O=eScience/OU=Brunel/L=ECE/CN=maziar ghorbani/CN=5053192958/CN=3530538741"],
+    issuer       = ["/C:UK/O=eScience/OU=Brunel/L=ECE/CN=maziar ghorbani/CN=5053192958"],
+    identity     = ["/C=UK/O=eScience/OU=Brunel/L=ECE/CN=maziar ghorbani"],
+    time         = "340:59:59",
+    DIRAC_group  = gridpp_user,
+    path         = ["/tmp/x509up_u1000"],
+    username     = maziar.ghorbani,
+    properties   = [NormalUser, JobSharing, AccountingMonitor],
+    VOMS         = True,
+    VOMS_dir     = ["/gridpp/usr/maziar.ghorbani/mydata"],
+    Proxies      = ["DN/C=UK/O=eScience/OU=Brunel/L=ECE/CN=maziar ghorbani"] 
 }

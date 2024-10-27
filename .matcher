@@ -1,81 +1,50 @@
-.matcher 
+matcher 
 {
     Agent
     {
-    run (./.proxy ./.local ./.config arg4)
-	me.launcher.title = "My FACS Application",
-	me.launcher.maximized = false,
-	me.launcher.height = 500
+		run (proxy .local .config)
+		me.launcher.title = "My FACS Application",
+		me.launcher.maximized = false,
+		me.launcher.height = 500
 	}
 	Apply
 	{
-		layout : 'border',
-		bodyBorder : false,
-		defaults : {}
-		collapsible : true,
-		split : true
-	},
+		layout = 'border',
+		collapsible = true,
+		split = true
+	}
 	Build 
 	{ 
-		title : 'Text area',
-		region : 'west',
-		width : 250,
-		minWidth : 230,
-		maxWidth : 350,
-		bodyPadding : 5,
-		autoScroll : true,
-		layout : {
+		title = 'Text area',
+		region = 'west',
+		width = 250,
+		minWidth = 230,
+		maxWidth = 350,
+		bodyPadding = 5,
+		autoScroll = true,
+		layout = {
 			type : 'vbox',
 			align : 'stretch',
-			pack : 'start'
+			pack : 'start',
 			fieldLabel : "Value",
 			labelAlign : "top",
 			flex : 1
 		}
-	},
+	}
 	Value 
 	{
-		scope : local,
-		success : response,
+		scope = local,
+		success = response,
 		alert("THE VALUE: "+response);
-	},
+	}
 	Values
 	{
-		scope : all,
-		success : response,
+		scope = all,
+		success = response,
 		alert("THE VALUE: "+response);
-	}, 
+	}
 	Layout
 	{
-		base : {scheduler,matcher,configure}
-	},
-	Items
-	{
-	proxy : {
-		type : 'ajax',
-		url : GLOBAL.BASE_URL + 'urls',
-		reader : {
-			type : 'json',
-			root : 'result'
-		},
-		timeout : 10
-            }
-	},
-	Fields
-	{
-		name : 'value',
-		type : 'int',
-		autoLoad : true,
-		pageSize : 50
-	},
-	me.grid = Ext.create('Ext.grid.Panel', {
-		region : 'all',
-		store : me.dataStore,
-		header : false,
-		columns : [{
-		header : 'Value',
-		sortable : true,
-		dataIndex : 'value'
-		}]
-		});
+		base = {scheduler,matcher,configure}
+	}
 }

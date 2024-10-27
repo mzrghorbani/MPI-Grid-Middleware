@@ -30,7 +30,7 @@ num_tasks = config['num_tasks']
 script_path = config['script_path']
 
 # Path to the executable script
-executable = "./run_simulation.sh"
+executable = "./run_jobs.sh"
 
 # List to keep track of submitted job IDs
 job_ids = []

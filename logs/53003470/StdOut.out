@@ -1,0 +1,116 @@
+Current working directory: /srv/localstage/condor/dir_1447322/DIRAC_6fcj6ugkpilot/53100789
+Environment Variables:
+DIRACSITE=LCG.UKI-LT2-IC-HEP.uk
+NVIDIA_VISIBLE_DEVICES=none
+SINGULARITY_CACHEDIR=/srv/localstage/condor/dir_1447322
+_CONDOR_CHIRP_CONFIG=/srv/localstage/condor/dir_1447322/.chirp.config
+_CONDOR_JOB_IWD=/srv/localstage/condor/dir_1447322
+PYTHONUNBUFFERED=yes
+_CONDOR_WRAPPER_ERROR_FILE=/srv/localstage/condor/dir_1447322/.job_wrapper_failure
+_CONDOR_MACHINE_AD=/srv/localstage/condor/dir_1447322/.machine.ad
+CONDORCE_COLLECTOR_HOST=ceprod02.grid.hep.ph.ic.ac.uk:9619
+ROOT_MAX_THREADS=1
+DAVIX_DISABLE_REDIRECT_CACHING=1
+NUMEXPR_NUM_THREADS=1
+DIRACJOBID=53100789
+CUBACORES=1
+_CHIRP_DELAYED_UPDATE_PREFIX=Chirp*
+OMP_THREAD_LIMIT=1
+HTCONDOR_JOBID=300249.0
+OPENSSL_ALLOW_PROXY_CERTS=1
+XML_CATALOG_FILES=file:///cvmfs/dirac.egi.eu/dirac/v8.0.38/Linux-x86_64/etc/xml/catalog file:///etc/xml/catalog
+PWD=/srv/localstage/condor/dir_1447322/DIRAC_6fcj6ugkpilot/53100789
+GSETTINGS_SCHEMA_DIR=/cvmfs/dirac.egi.eu/dirac/v8.0.38/Linux-x86_64/share/glib-2.0/schemas
+CONDA_PREFIX=/cvmfs/dirac.egi.eu/dirac/v8.0.38/Linux-x86_64
+DIRAC_PROCESSORS=1
+MAMBA_ROOT_PREFIX=/cvmfs/dirac.egi.eu/dirac/v8.0.38/Linux-x86_64
+_CONDOR_JOB_AD=/srv/localstage/condor/dir_1447322/.job.ad
+DIRACSYSCONFIG=/srv/localstage/condor/dir_1447322/DIRAC_6fcj6ugkpilot/pilot.cfg
+GSETTINGS_SCHEMA_DIR_CONDA_BACKUP=
+X509_VOMS_DIR=/cvmfs/grid.cern.ch/etc/grid-security/vomsdir
+PYTHON_CPU_COUNT=1
+OPENBLAS_NUM_THREADS=1
+_CONDOR_BIN=/usr/bin
+LANG=en_GB.UTF-8
+DAVIX_USE_LIBCURL=1
+X509_VOMSES=/cvmfs/grid.cern.ch/etc/grid-security/vomses
+JOBID=53100789
+_CONDOR_ANCESTOR_2637=3045:1724034229:840565601
+CONDA_PROMPT_MODIFIER=(base)
+DIRAC_JOB_PROCESSORS=1
+TMPDIR=/tmp
+_CONDOR_SCRATCH_DIR=/srv/localstage/condor/dir_1447322
+VO_CMS_SW_DIR=/cvmfs/cms.cern.ch
+DIRAC_VOMSES=/cvmfs/grid.cern.ch/etc/grid-security/vomses
+DIRAC_PILOT_STAMP=200385ccf6c2b0a40378781dda3f7a8f
+CUDA_VISIBLE_DEVICES=10000
+DIRACROOT=/cvmfs/dirac.egi.eu/dirac/v8.0.38/Linux-x86_64
+_CONDOR_JOB_PIDS=
+GPU_DEVICE_ORDINAL=10000
+CONDA_BACKUP_CONDOR_CONFIG=empty
+CONDA_SHLVL=1
+TEMP=/tmp
+X509_CERT_DIR=/cvmfs/grid.cern.ch/etc/grid-security/certificates
+GOMAXPROCS=1
+SHLVL=3
+TF_NUM_THREADS=1
+APPTAINER_CACHEDIR=/srv/localstage/condor/dir_1447322
+BATCH_SYSTEM=HTCondor
+_CONDOR_AssignedGPUs=10000
+CONDOR_CONFIG=/cvmfs/dirac.egi.eu/dirac/v8.0.38/Linux-x86_64/etc/condor/condor_config
+_CONDOR_SLOT=slot1_10
+_CONDOR_ANCESTOR_1447322=1447334:1725645310:4179391217
+DIRACOS=/cvmfs/dirac.egi.eu/dirac/v8.0.38/Linux-x86_64
+TF_LOOP_PARALLEL_ITERATIONS=1
+CONDA_DEFAULT_ENV=base
+OMP_NUM_THREADS=1
+AGENT_WORKDIRECTORY=/srv/localstage/condor/dir_1447322/DIRAC_6fcj6ugkpilot/work/WorkloadManagement/JobAgent
+TMP=/tmp
+PATH=/cvmfs/dirac.egi.eu/dirac/v8.0.38/Linux-x86_64/bin:/cvmfs/dirac.egi.eu/dirac/v8.0.38/Linux-x86_64/condabin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
+JULIA_NUM_THREADS=1
+_CONDOR_ANCESTOR_3045=1447322:1725645309:3578750638
+PYTHONWARNINGS=ignore
+MKL_NUM_THREADS=1
+DIRAC_WHOLENODE=False
+X509_USER_PROXY=/tmp/tmpbe9urky2
+DIRAC_RC_PATH=/cvmfs/dirac.egi.eu/dirac/v8.0.38/Linux-x86_64/diracosrc
+_=/usr/bin/env
+Mounted Filesystems:
+/dev/mapper/wk01vg-rootvol on / type ext4 (rw,relatime,seclabel)
+sysfs on /sys type sysfs (rw,nosuid,nodev,noexec,relatime,seclabel)
+securityfs on /sys/kernel/security type securityfs (rw,nosuid,nodev,noexec,relatime)
+cgroup2 on /sys/fs/cgroup type cgroup2 (rw,nosuid,nodev,noexec,relatime,seclabel,nsdelegate,memory_recursiveprot)
+pstore on /sys/fs/pstore type pstore (rw,nosuid,nodev,noexec,relatime,seclabel)
+bpf on /sys/fs/bpf type bpf (rw,nosuid,nodev,noexec,relatime,mode=700)
+selinuxfs on /sys/fs/selinux type selinuxfs (rw,nosuid,noexec,relatime)
+debugfs on /sys/kernel/debug type debugfs (rw,nosuid,nodev,noexec,relatime,seclabel)
+tracefs on /sys/kernel/tracing type tracefs (rw,nosuid,nodev,noexec,relatime,seclabel)
+fusectl on /sys/fs/fuse/connections type fusectl (rw,nosuid,nodev,noexec,relatime)
+configfs on /sys/kernel/config type configfs (rw,nosuid,nodev,noexec,relatime)
+devtmpfs on /dev type devtmpfs (rw,nosuid,seclabel,size=4096k,nr_inodes=24509405,mode=755,inode64)
+tmpfs on /dev/shm type tmpfs (rw,nosuid,nodev,seclabel,inode64)
+devpts on /dev/pts type devpts (rw,nosuid,noexec,relatime,seclabel,gid=5,mode=620,ptmxmode=000)
+mqueue on /dev/mqueue type mqueue (rw,nosuid,nodev,noexec,relatime,seclabel)
+hugetlbfs on /dev/hugepages type hugetlbfs (rw,relatime,seclabel,pagesize=2M)
+tmpfs on /run type tmpfs (rw,nosuid,nodev,seclabel,size=39223300k,nr_inodes=819200,mode=755,inode64)
+none on /run/credentials/systemd-sysctl.service type ramfs (ro,nosuid,nodev,noexec,relatime,seclabel,mode=700)
+none on /run/credentials/systemd-tmpfiles-setup-dev.service type ramfs (ro,nosuid,nodev,noexec,relatime,seclabel,mode=700)
+none on /run/credentials/systemd-tmpfiles-setup.service type ramfs (ro,nosuid,nodev,noexec,relatime,seclabel,mode=700)
+proc on /proc type proc (rw,nosuid,nodev,noexec,relatime)
+systemd-1 on /proc/sys/fs/binfmt_misc type autofs (rw,relatime,fd=29,pgrp=1,timeout=0,minproto=5,maxproto=5,direct,pipe_ino=22973)
+/dev/md0 on /boot type ext4 (rw,relatime,seclabel)
+/dev/mapper/wk01vg-lstagevol on /srv/localstage type ext4 (rw,relatime,seclabel)
+/dev/mapper/wk01vg-cvmfsvol on /srv/cvmfs type ext4 (rw,relatime,seclabel)
+/dev/mapper/wk01vg-varvol on /var type ext4 (rw,relatime,seclabel)
+/dev/mapper/wk01vg-varlogvol on /var/log type ext4 (rw,relatime,seclabel)
+sunrpc on /var/lib/nfs/rpc_pipefs type rpc_pipefs (rw,relatime)
+/dev/mapper/wk01vg-tmpvol on /tmp type ext4 (rw,relatime,seclabel)
+/etc/auto.misc on /misc type autofs (rw,relatime,fd=6,pgrp=2586,timeout=300,minproto=5,maxproto=5,indirect,pipe_ino=1693)
+-hosts on /net type autofs (rw,relatime,fd=9,pgrp=2586,timeout=300,minproto=5,maxproto=5,indirect,pipe_ino=63890)
+/etc/auto.cvmfs on /cvmfs type autofs (rw,relatime,fd=12,pgrp=2586,timeout=300,minproto=5,maxproto=5,indirect,pipe_ino=73123)
+cvmfs2 on /cvmfs/grid.cern.ch type fuse (ro,nosuid,nodev,relatime,user_id=0,group_id=0,default_permissions,allow_other)
+cvmfs2 on /cvmfs/cms.cern.ch type fuse (ro,nosuid,nodev,relatime,user_id=0,group_id=0,default_permissions,allow_other)
+cvmfs2 on /cvmfs/singularity.opensciencegrid.org type fuse (ro,nosuid,nodev,relatime,user_id=0,group_id=0,default_permissions,allow_other)
+cvmfs2 on /cvmfs/oasis.opensciencegrid.org type fuse (ro,nosuid,nodev,relatime,user_id=0,group_id=0,default_permissions,allow_other)
+cvmfs2 on /cvmfs/lhcb.cern.ch type fuse (ro,nosuid,nodev,relatime,user_id=0,group_id=0,default_permissions,allow_other)
+cvmfs2 on /cvmfs/cernvm-prod.cern.ch type fuse (ro,nosuid,nodev,relatime,user_id=0,group_id=0,default_permissions,allow_other)

@@ -211,5 +211,21 @@ Use DIRAC commands to monitor job status and retrieve results.
 
     python3 test/monitor.py <JobID>
 
-### Note: The installation process can be complex. Please raise a GitHub issue as soon as you encounter a problem. 
+## Automate Job Submission
 
+The executable `automate_dirac.sh` does the following:
+
+1. Sets paths for DIRAC and middleware directories.
+2. Configures DIRAC if not already done.
+3. Overwrites DIRAC files with middleware modifications.
+4. Runs configuration for Dirac and Middleware.
+5. Checks if required middleware files are copied.
+6. Runs resource pooling initialization.
+7. Submit pre-defined jobs by executing `submit_jobs.py`.
+8. Creates log file upon job completion.
+
+#### To execute automation script, run the following command:
+
+    chmod +x automate_dirac.sh && bash automate_dirac.sh
+
+#### Note: Please raise a GitHub issue as soon as you encounter a problem. 
